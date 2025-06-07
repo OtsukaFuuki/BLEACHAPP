@@ -161,10 +161,10 @@ export default function Quiz() {
           {/* 回答履歴一覧 */}
           <Box
             sx={{
-              maxHeight: 400,
+              maxHeight: 450,
               overflowY: "auto",
               mt: 3,
-              pr: 1, // スクロールバーが被らないように右に少し余白
+              pr: 1,
             }}
           >
             {answers.map((ans, i) => {
@@ -179,14 +179,31 @@ export default function Quiz() {
                   borderColor={isCorrect ? "success.light" : "error.light"}
                   bgcolor="#ffffffd2"
                 >
-                  <Typography fontWeight="bold">
+                  <Typography>
                     {i + 1}. {ans.question}
                   </Typography>
-                  <Typography sx={{ fontWeight: "bold" }}>
-                    あなたの答え: {ans.selected}
-                  </Typography>
+                  <Box sx={{ display: "flex", alignItems: "center", mt: 1 }}>
+                    <Typography sx={{ fontWeight: "bold", width: "100px" }}>
+                      あなたの答え
+                    </Typography>
+                    <Typography sx={{ fontWeight: "bold" }}>
+                      : {ans.selected}
+                    </Typography>
+                  </Box>
 
-                  <Typography>正解: {ans.correct}</Typography>
+                  <Box sx={{ display: "flex", alignItems: "center" }}>
+                    <Typography
+                      sx={{
+                        fontWeight: "bold",
+                        width: "100px",
+                      }}
+                    >
+                      正解
+                    </Typography>
+                    <Typography sx={{ fontWeight: "bold" }}>
+                      : {ans.correct}
+                    </Typography>
+                  </Box>
                 </Box>
               );
             })}
