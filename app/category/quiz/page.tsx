@@ -222,7 +222,7 @@ export default function Quiz() {
           alt="問題画像"
           sx={{
             maxWidth: "100%",
-            height: "382px",
+            height: "300px",
             my: 1,
             flexShrink: 0,
           }}
@@ -261,7 +261,6 @@ export default function Quiz() {
               onClick={() => handleAnswer(choice)}
               disabled={!!selected}
               sx={{
-                py: 1.5,
                 fontSize: "1rem",
                 borderWidth: 2,
                 borderColor,
@@ -329,7 +328,7 @@ export default function Quiz() {
       {/* ここから追加：下部の3ボタン */}
       <Box
         sx={{
-          mt: 4,
+          mt: 1,
           display: "flex",
           justifyContent: "center",
           gap: 4,
