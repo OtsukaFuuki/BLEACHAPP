@@ -306,7 +306,9 @@ export default function Quiz() {
                 justifyContent: "space-between",
                 alignItems: "center",
                 "&:hover": {
-                  backgroundColor: !selected ? "#e0e0e0" : bgColor,
+                  backgroundColor: bgColor,
+                  borderColor: borderColor,
+                  color: "#000",
                 },
               }}
             >
