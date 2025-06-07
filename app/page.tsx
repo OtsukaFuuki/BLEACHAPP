@@ -1,95 +1,91 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+
+import { useRouter } from "next/navigation";
+import { Button, Box } from "@mui/material";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const router = useRouter();
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+  const backgroundImages = [
+    "/images/top/top4.jpeg",
+    "/images/top/top14.jpeg",
+    "/images/top/top42.jpeg",
+    "/images/top/top43.jpeg",
+    "/images/top/top28.jpeg",
+    "/images/top/top39.jpeg",
+  ];
+
+  const [randomImage, setRandomImage] = useState<string | null>(null);
+
+  useEffect(() => {
+    const index = Math.floor(Math.random() * backgroundImages.length);
+    setRandomImage(backgroundImages[index]);
+  }, []);
+
+  const handleStart = () => {
+    router.push("/category");
+  };
+
+  return (
+    <Box
+      sx={{
+        py: 6,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100vh",
+        backgroundImage: randomImage ? `url(${randomImage})` : "none",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <Box
+        sx={{
+          width: 250,
+          height: 100,
+          backgroundImage: 'url("/images/logo/logo.png")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          justifyContent: "left",
+          alignItems: "left",
+          display: "flex",
+          position: "absolute",
+          top: 20,
+          left: 20,
+          zIndex: 1,
+        }}
+      ></Box>
+      <Button
+        sx={{
+          color: "#fff",
+          fontWeight: "bold",
+          width: "100%",
+          height: "100vh",
+          backgroundColor: "transparent",
+          "&:hover": {
+            backgroundColor: "inherit",
+            color: "#fff",
+            boxShadow: "none",
+          },
+          zIndex: 1,
+          animation: "bounce 1s infinite",
+          "@keyframes bounce": {
+            "0%, 100%": {
+              transform: "translateY(0)",
+            },
+            "50%": {
+              transform: "translateY(-4px)",
+            },
+          },
+        }}
+        onClick={handleStart}
+      >
+        ここをクリック
+      </Button>
+    </Box>
   );
 }
