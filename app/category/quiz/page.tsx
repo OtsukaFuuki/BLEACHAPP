@@ -218,8 +218,8 @@ export default function Quiz() {
         sx={{
           fontSize: 16,
           flexShrink: 0,
-          minHeight: 55,
-          fontWeight: "bold",
+          minHeight: 75,
+          fontWeight: "semiBold",
           textAlign: "left",
         }}
       >
@@ -244,7 +244,7 @@ export default function Quiz() {
         sx={{
           display: "flex",
           flexDirection: "column",
-          gap: 1,
+          gap: 0.5,
           mt: 1,
           flexGrow: 1,
         }}
@@ -272,7 +272,9 @@ export default function Quiz() {
               onClick={() => handleAnswer(choice)}
               disabled={!!selected}
               sx={{
-                fontSize: "1rem",
+                fontSize: 14,
+                p: 1,
+                color: "#000",
                 borderColor,
                 backgroundColor: bgColor,
                 textAlign: "left",
