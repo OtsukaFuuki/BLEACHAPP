@@ -46,7 +46,7 @@ export default function Home() {
         sx={{
           width: 250,
           height: 100,
-          backgroundImage: 'url("/images/logo/logo.png")',
+          backgroundImage: 'url("/images/logo/logo2.png")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
