@@ -117,6 +117,7 @@ export default function CategoryPage() {
                 value={count.toString()}
                 label="問題数"
                 onChange={handleCountChange}
+                sx={{ backgroundColor: "#fff", borderRadius: 1 }}
               >
                 {questionCounts.map((num) => (
                   <MenuItem key={num} value={num}>
