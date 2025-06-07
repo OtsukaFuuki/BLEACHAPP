@@ -251,7 +251,7 @@ export default function Quiz() {
 
       <Typography
         sx={{
-          fontSize: 16,
+          fontSize: 14,
           flexShrink: 0,
           minHeight: 75,
           fontWeight: "semiBold",
