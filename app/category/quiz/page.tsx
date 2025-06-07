@@ -264,7 +264,11 @@ export default function Quiz() {
       {(q.image ?? "/images/noimage/noimg.png") && (
         <Box
           component="img"
-          src={q.image ?? "/images/noimage/noimg.png"}
+          src={
+            q.image && q.image.trim() !== ""
+              ? q.image
+              : "/images/noimage/noimg.png"
+          }
           alt="問題画像"
           onError={(e) => {
             const target = e.target as HTMLImageElement;
