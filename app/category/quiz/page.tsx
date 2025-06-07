@@ -142,10 +142,10 @@ export default function Quiz() {
   if (isFinished) {
     return (
       <Container maxWidth="sm" sx={{ py: 4 }}>
-        <Typography variant="h4" gutterBottom align="center">
+        <Typography variant="h4" align="center">
           クイズ終了！
         </Typography>
-        <Typography variant="h6" gutterBottom align="center">
+        <Typography variant="h6" align="center">
           あなたのスコア：{score} / {questions.length}
         </Typography>
 
@@ -162,7 +162,7 @@ export default function Quiz() {
             const isCorrect = ans.selected === ans.correct;
             return (
               <Box key={i} mb={2} p={2} border="1px solid" borderRadius={2}>
-                <Typography fontWeight="bold" gutterBottom>
+                <Typography fontWeight="bold">
                   {i + 1}. {ans.question}
                 </Typography>
 
@@ -195,20 +195,25 @@ export default function Quiz() {
     <Container
       maxWidth="sm"
       sx={{
-        py: 4,
+        p: 2,
         textAlign: "center",
         display: "flex",
         flexDirection: "column",
-        minHeight: "80vh",
       }}
     >
-      <Typography variant="subtitle1" gutterBottom>
+      <Typography
+        variant="subtitle1"
+        sx={{
+          display: "flex",
+          justifyContent: "right",
+          mb: 1,
+          fontSize: "0.875rem",
+        }}
+      >
         問題 {current + 1} / {questions.length}
       </Typography>
 
-      <Typography variant="h5" gutterBottom sx={{ flexShrink: 0 }}>
-        {q.question}
-      </Typography>
+      <Typography sx={{ fontSize: 18, flexShrink: 0 }}>{q.question}</Typography>
 
       {q.image && (
         <Box
@@ -217,8 +222,8 @@ export default function Quiz() {
           alt="問題画像"
           sx={{
             maxWidth: "100%",
-            height: "auto",
-            my: 2,
+            height: "382px",
+            my: 1,
             flexShrink: 0,
           }}
         />
@@ -228,8 +233,8 @@ export default function Quiz() {
         sx={{
           display: "flex",
           flexDirection: "column",
-          gap: 2,
-          mt: 3,
+          gap: 1,
+          mt: 1,
           flexGrow: 1,
         }}
       >
