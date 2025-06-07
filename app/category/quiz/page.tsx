@@ -214,7 +214,15 @@ export default function Quiz() {
         問題 {current + 1} / {questions.length}
       </Typography>
 
-      <Typography sx={{ fontSize: 18, flexShrink: 0, minHeight: 50 }}>
+      <Typography
+        sx={{
+          fontSize: 16,
+          flexShrink: 0,
+          minHeight: 55,
+          fontWeight: "bold",
+          textAlign: "left",
+        }}
+      >
         {q.question}
       </Typography>
 
