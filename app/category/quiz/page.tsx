@@ -391,7 +391,6 @@ export default function Quiz() {
           disabled={current === questions.length - 1}
           sx={{
             minWidth: 120,
-            fontWeight: "bold",
             border: "none",
             background: "transparent",
             color: current === questions.length - 1 ? "#999" : "#333",
