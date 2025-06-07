@@ -3,7 +3,7 @@ export const hardQuestions = [
     id: 500,
     question:
       "飛段の術「呪術・死司憑血」における生贄の儀式を行う際、彼が描くシンボルの正しい形状は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["五芒星", "六芒星", "逆三角形と円", "十字架と円"],
     answer: "逆三角形と円",
   },
@@ -11,7 +11,7 @@ export const hardQuestions = [
     id: 501,
     question:
       "三代目火影・猿飛ヒルゼンの四象封印の術で、大蛇丸の腕を封印した際、彼の体内で使われた動物の魂は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["猿", "犬", "狐", "死神"],
     answer: "死神",
   },
@@ -19,7 +19,7 @@ export const hardQuestions = [
     id: 502,
     question:
       "綱手が医療忍術でチャクラメスを使う際、その術の正式名称は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["創造再生", "百豪の術", "掌仙術", "チャクラのメス"],
     answer: "掌仙術",
   },
@@ -27,7 +27,7 @@ export const hardQuestions = [
     id: 503,
     question:
       "ロック・リーが八門遁甲の「開門」を開いた際、体内のチャクラが放出される場所として描かれたのは、体のどの部分でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["脳", "心臓", "腎臓", "肝臓"],
     answer: "脳",
   },
@@ -35,7 +35,7 @@ export const hardQuestions = [
     id: 504,
     question:
       "うちはイタチがサスケと最初に対峙した際、使用した万華鏡写輪眼の幻術「月読」の世界では、対象者は何日間にわたり拷問を受け続けるとされていますか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["3日間", "7日間", "72時間", "72日間"],
     answer: "72時間",
   },
@@ -43,7 +43,7 @@ export const hardQuestions = [
     id: 505,
     question:
       "奈良シカマルが多用する影真似の術の射程距離を伸ばすために使用する、口で唱える忍術の正式名称は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["影寄せの術", "影縛りの術", "影真似の術・集", "影真似の術・繋"],
     answer: "影真似の術・繋",
   },
@@ -51,7 +51,7 @@ export const hardQuestions = [
     id: 506,
     question:
       "千手扉間が開発した、穢土転生を完成させるために必要な生贄の身体に宿らせる魂の術の正式名称は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "禁術・穢土転生",
       "口寄せ・穢土転生",
@@ -64,7 +64,7 @@ export const hardQuestions = [
     id: 507,
     question:
       "デイダラが最後の自爆で披露した術「C4迦楼羅」において、自身の体を媒介にして生成したものは何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["微細な粘土爆弾", "巨大な粘土像", "超高熱の炎", "毒ガス"],
     answer: "微細な粘土爆弾",
   },
@@ -72,7 +72,7 @@ export const hardQuestions = [
     id: 508,
     question:
       "干柿鬼鮫が持つ刀「鮫肌」が、チャクラを吸収する際にその刀身に現れる特徴的な変化は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "刃が巨大化する",
       "刃が鱗状になる",
@@ -85,7 +85,7 @@ export const hardQuestions = [
     id: 509,
     question:
       "暁のリーダーであるペイン（長門）が天道ペインを操る際に、使用していたチャクラ受信機の形状は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["丸い棒状", "四角い板状", "細い釘状", "螺旋状の筒"],
     answer: "細い釘状",
   },
@@ -93,7 +93,7 @@ export const hardQuestions = [
     id: 510,
     question:
       "波風ミナトが開発した術「飛雷神の術」は、具体的にどの術の応用によって生まれたとされていますか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["瞬身の術", "口寄せの術", "螺旋丸", "時空間忍術"],
     answer: "時空間忍術",
   },
@@ -101,7 +101,7 @@ export const hardQuestions = [
     id: 511,
     question:
       "日向ヒナタが使用する「八卦六十四掌」は、元々どの流派の体術でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["柔拳", "剛拳", "仙人モード", "木の葉流体術"],
     answer: "柔拳",
   },
@@ -109,7 +109,7 @@ export const hardQuestions = [
     id: 512,
     question:
       "カブトが仙人モードになるために取り入れた、龍地洞の仙人チャクラは、具体的にどの生物の力を源としていますか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["蛇", "竜", "蛙", "蛞蝓"],
     answer: "蛇",
   },
@@ -117,7 +117,7 @@ export const hardQuestions = [
     id: 513,
     question:
       "うちはマダラが、輪廻眼を開眼するために取り込んだとされる、千手柱間のどの細胞が重要だったでしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["心臓の細胞", "肺の細胞", "脊髄の細胞", "特殊な細胞"],
     answer: "特殊な細胞",
   },
@@ -125,7 +125,7 @@ export const hardQuestions = [
     id: 514,
     question:
       "砂隠れの里の五代目風影・我愛羅が、幼少期に封印されていた尾獣の名前は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["守鶴", "九喇嘛", "磯撫", "孫悟空"],
     answer: "守鶴",
   },
@@ -133,7 +133,7 @@ export const hardQuestions = [
     id: 515,
     question:
       "四代目雷影・エーが使用する「雷遁の鎧」は、具体的に自身の肉体のどの部分にチャクラを集中させて強化する術でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["全身の筋肉", "神経系", "骨格", "皮膚"],
     answer: "神経系",
   },
@@ -141,7 +141,7 @@ export const hardQuestions = [
     id: 516,
     question:
       "木の葉隠れの里の忍犬使い、犬塚キバが使う術「牙通牙」は、彼とパートナーのアカマルがどのような体術で連携して繰り出す術でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "回転しながら突進",
       "地面を掘り進む",
@@ -154,7 +154,7 @@ export const hardQuestions = [
     id: 517,
     question:
       "ダンゾウが右腕に埋め込んでいた写輪眼の数を全て数えるといくつになるでしょう？（彼の右腕に埋め込まれているものと、その場で移植していたものを全て）",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["10個", "11個", "12個", "13個"],
     answer: "11個",
   },
@@ -162,7 +162,7 @@ export const hardQuestions = [
     id: 518,
     question:
       "薬師カブトが、大蛇丸の遺体と自身の身体を融合させた後、大蛇丸のどの術を完全に習得したとされていますか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["万蛇羅の術", "口寄せ・穢土転生", "不屍転生", "蛇仙術"],
     answer: "不屍転生",
   },
@@ -170,14 +170,14 @@ export const hardQuestions = [
     id: 519,
     question:
       "長門が使用する輪廻眼の能力「畜生道」が召喚する口寄せ動物の中で、唯一、人間型の特徴を持つ動物は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["カメレオン", "サイ", "鳥", "多頭犬"],
     answer: "鳥",
   },
   {
     id: 520,
     question: "うちはシスイの万華鏡写輪眼が持つ最強の幻術の名前は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["月読", "天照", "別天神", "神威"],
     answer: "別天神",
   },
@@ -185,7 +185,7 @@ export const hardQuestions = [
     id: 521,
     question:
       "千手柱間が使用する木遁忍術の中で、彼が九尾を抑え込む際に使った具体的な術は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["木遁・木人", "木遁・木竜", "木遁・樹界降誕", "木遁・皆布袋の術"],
     answer: "木遁・木人",
   },
@@ -193,7 +193,7 @@ export const hardQuestions = [
     id: 522,
     question:
       "サイが使用する「超獣偽画」の術で、彼が描いた動物を実体化させる際に使用するインクの色は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "墨と水",
       "特殊な染料",
@@ -206,7 +206,7 @@ export const hardQuestions = [
     id: 523,
     question:
       "うちはオビトが、カカシにプレゼントした写輪眼が、カカシの左目に移植されたのは何歳の時でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["12歳", "13歳", "14歳", "15歳"],
     answer: "13歳",
   },
@@ -214,7 +214,7 @@ export const hardQuestions = [
     id: 524,
     question:
       "大蛇丸が隠れ里を抜ける前、彼が研究していた人体実験の最終目標は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "不老不死の術",
       "全属性チャクラの獲得",
@@ -227,7 +227,7 @@ export const hardQuestions = [
     id: 525,
     question:
       "うずまきクシナが、ナルトを妊娠中に使ったとされる封印術の名前は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["金剛封鎖", "渦巻き封印", "四象封印", "八卦の封印式"],
     answer: "金剛封鎖",
   },
@@ -235,7 +235,7 @@ export const hardQuestions = [
     id: 526,
     question:
       "うちはマダラが、穢土転生体として復活した後、最初に奪った忍の力は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "柱間の仙人モード",
       "五影のチャクラ",
@@ -248,7 +248,7 @@ export const hardQuestions = [
     id: 527,
     question:
       "ダンゾウが持つ右腕に埋め込まれた写輪眼は、誰の協力によって埋め込まれたとされていますか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["大蛇丸", "うちはマダラ", "サスケ", "カブト"],
     answer: "大蛇丸",
   },
@@ -256,7 +256,7 @@ export const hardQuestions = [
     id: 528,
     question:
       "飛段と角都のコンビは「不死身コンビ」と呼ばれていますが、彼らが暁で担当していた役割は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "偵察と情報収集",
       "暗殺と金稼ぎ",
@@ -269,7 +269,7 @@ export const hardQuestions = [
     id: 529,
     question:
       "うちはイタチが所属していた暗部（木の葉隠れの里の特殊部隊）の部隊番号は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["第三班", "第四班", "根", "独立班"],
     answer: "独立班",
   },
@@ -277,7 +277,7 @@ export const hardQuestions = [
     id: 530,
     question:
       "君麻呂が持つ体質「尸骨脈」は、具体的に体のどの部分から骨を形成し、武器として使用する血継限界でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["全身の骨", "皮膚の下の骨", "脊髄の骨", "特別な腺の骨"],
     answer: "全身の骨",
   },
@@ -285,7 +285,7 @@ export const hardQuestions = [
     id: 531,
     question:
       "自来也がペインとの戦いで敗れた際、残した暗号の中で最も重要な文字は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["20", "9", "31", "106"],
     answer: "31",
   },
@@ -293,7 +293,7 @@ export const hardQuestions = [
     id: 532,
     question:
       "ミナトがナルトのへその緒代わりとして残したチャクラは、具体的にナルトが何歳の時に発動するように仕組まれていましたか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["131歳", "16歳", "17歳", "18歳"],
     answer: "17歳",
   },
@@ -301,7 +301,7 @@ export const hardQuestions = [
     id: 533,
     question:
       "穢土転生で復活した二代目火影・千手扉間が、うちはサスケに対して放った術「互乗起爆札」は、どのような特性を持つ術でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "無限に増殖する起爆札",
       "触れると爆発する札",
@@ -314,7 +314,7 @@ export const hardQuestions = [
     id: 534,
     question:
       "鬼鮫が持つ「鮫肌」は、チャクラを吸収する際にその刃に現れる特徴的な変化は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["巨大化する", "鱗状になる", "赤く発光する", "水が噴き出す"],
     answer: "鱗状になる",
   },
@@ -322,7 +322,7 @@ export const hardQuestions = [
     id: 535,
     question:
       "猿飛アスマが戦死する前に、奈良シカマルに託した最後の言葉（意志）は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["玉を守れ", "木の葉を守れ", "火影になれ", "諦めるな"],
     answer: "玉を守れ",
   },
@@ -330,7 +330,7 @@ export const hardQuestions = [
     id: 536,
     question:
       "うずまきナルトが仙人モードで発動する「仙法・螺旋丸」は、通常の螺旋丸と比べて何が最も大きく異なるでしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["チャクラの色", "術の大きさ", "自然エネルギーの追加", "回転速度"],
     answer: "自然エネルギーの追加",
   },
@@ -338,14 +338,14 @@ export const hardQuestions = [
     id: 537,
     question:
       "暁のメンバーであるゼツが、その身体の構成要素として利用しているのは、千手柱間のどの部分の細胞でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["全身の細胞", "皮膚の細胞", "培養された細胞", "特殊な生体組織"],
     answer: "特殊な生体組織",
   },
   {
     id: 538,
     question: "はたけカカシが写輪眼を開眼した時、彼の隣にいたのは誰でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["うちはオビト", "リン", "ミナト", "父サクモ"],
     answer: "うちはオビト",
   },
@@ -353,7 +353,7 @@ export const hardQuestions = [
     id: 539,
     question:
       "山中いの、奈良シカマル、秋道チョウジの「猪鹿蝶」コンビが、班として最初に受けた任務は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["木の葉丸の護衛", "行方不明者の捜索", "猫の捜索", "Dランク任務"],
     answer: "猫の捜索",
   },
@@ -361,7 +361,7 @@ export const hardQuestions = [
     id: 540,
     question:
       "日向ネジが使う「八卦空掌」は、具体的にどのような形でチャクラを放出する体術でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "掌から直接チャクラを撃ち出す",
       "チャクラを凝縮して投げる",
@@ -373,7 +373,7 @@ export const hardQuestions = [
   {
     id: 541,
     question: "自来也が口寄せ契約を結んでいた動物は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["カエル", "ナメクジ", "蛇", "猿"],
     answer: "カエル",
   },
@@ -381,7 +381,7 @@ export const hardQuestions = [
     id: 542,
     question:
       "大蛇丸がかつて所属していた伝説の三忍の一人として、彼が最も重要視していた研究テーマは何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["不死の追求", "写輪眼の解明", "尾獣の制御", "仙術の習得"],
     answer: "不死の追求",
   },
@@ -389,7 +389,7 @@ export const hardQuestions = [
     id: 543,
     question:
       "うちはイタチがサスケに残した最大の幻術「コトアマツカミ」は、誰の万華鏡写輪眼の能力でしたか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["うちはシスイ", "うちはマダラ", "うちはイズナ", "うちはオビト"],
     answer: "うちはシスイ",
   },
@@ -397,7 +397,7 @@ export const hardQuestions = [
     id: 544,
     question:
       "綱手が行使する「創造再生」の術は、彼女の額にあるどの部分に蓄えられたチャクラを解放することで発動するでしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "百豪の術の封印",
       "百豪の印",
@@ -410,7 +410,7 @@ export const hardQuestions = [
     id: 545,
     question:
       "長門が輪廻眼を開眼した際、その開眼のきっかけとなった出来事は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["弥彦の死", "家族の死", "自来也との出会い", "里の争い"],
     answer: "弥彦の死",
   },
@@ -418,7 +418,7 @@ export const hardQuestions = [
     id: 546,
     question:
       "キラービーが八尾と共に行うラップのスタイルは、彼のチャクラ量とどのように関連していますか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "チャクラ量が多いほど高速なラップになる",
       "チャクラを消費して韻を踏む",
@@ -431,7 +431,7 @@ export const hardQuestions = [
     id: 547,
     question:
       "うちはサスケが、イタチとの最終決戦で使用した術「麒麟」は、具体的に何を用いて発動する雷遁忍術でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "チャクラを雷に変換",
       "自然の雷を誘導",
@@ -444,7 +444,7 @@ export const hardQuestions = [
     id: 548,
     question:
       "はたけサクモが「木の葉の白い牙」と呼ばれたのは、彼の得意な術や使用する武器の何に由来しているでしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "白光チャクラ刀",
       "白いマント",
@@ -457,7 +457,7 @@ export const hardQuestions = [
     id: 549,
     question:
       "四代目火影・波風ミナトが、九尾を封印した際に使用した術の正式名称は何でしょう？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["四象封印", "八卦の封印式", "死神の術", "封印術・四象封印"],
     answer: "八卦の封印式",
   },
@@ -465,7 +465,7 @@ export const hardQuestions = [
     id: 550,
     question:
       "九尾のチャクラを半分に分けた際に、陰のチャクラを封印した場所と陽のチャクラを封印した場所はどこですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "陰のチャクラはナルトに、陽のチャクラは波風ミナトに封印された。",
       "陰のチャクラは波風ミナトに、陽のチャクラはナルトに封印された。",
@@ -478,14 +478,14 @@ export const hardQuestions = [
     id: 551,
     question:
       "うずまき一族の「裏歴史」に関連し、大筒木カグヤの血統が直接関わった封印術の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["十尾封印術", "屍鬼封尽", "八卦の封印式", "六道封印術"],
     answer: "六道封印術",
   },
   {
     id: 552,
     question: "大筒木ハゴロモが尾獣を作り出す際に使った術の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "口寄せ・尾獣",
       "万象創造",
@@ -498,7 +498,7 @@ export const hardQuestions = [
     id: 553,
     question:
       "木ノ葉の「火影岩」の背後に隠された緊急時用の施設の正式名称は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "火影地下要塞",
       "木の葉隠れ避難シェルター",
@@ -511,7 +511,7 @@ export const hardQuestions = [
     id: 554,
     question:
       "大筒木モモシキが遺した「力の系譜」が忍界に伝わった結果生まれた特異な能力の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["転生眼", "仙術チャクラ", "カーマ", "黄泉比良坂"],
     answer: "カーマ",
   },
@@ -519,7 +519,7 @@ export const hardQuestions = [
     id: 555,
     question:
       "波風ミナトが九尾を封印する際に発動した封印術は、彼がどの術をアレンジしたものですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "八卦封印をベースに屍鬼封尽を融合させたもの",
       "四象封印を基に開発",
@@ -532,7 +532,7 @@ export const hardQuestions = [
     id: 556,
     question:
       "自来也が命を落とした際、彼が最後にカエルに託したメッセージに書かれていた「暗号」の全文は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "「火影の器」に関する暗号文",
       "「ペインは長門（正体は長門に繋がる）」に関する暗号文",
@@ -544,7 +544,7 @@ export const hardQuestions = [
   {
     id: 557,
     question: "うちはシスイの「別天神」が特に効果を発揮する条件とは何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "相手の認識を完全に自然な形で改変する場合",
       "相手のチャクラを吸収する場合",
@@ -557,7 +557,7 @@ export const hardQuestions = [
     id: 558,
     question:
       "第四次忍界大戦で穢土転生された初代火影・千手柱間が発動した最大級の木遁術の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "木遁・樹界降誕",
       "木遁・木人",
@@ -570,7 +570,7 @@ export const hardQuestions = [
     id: 559,
     question:
       "ペイン六道が一つの身体を失った場合、その「道」を復活させるための条件は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "他の道のチャクラを分け与えること",
       "新たな死体を用意し、輪廻眼で操ること",
@@ -583,7 +583,7 @@ export const hardQuestions = [
     id: 560,
     question:
       "第四次忍界大戦で戦った大筒木カグヤが初めて「異空間移動」を使用した具体的な状況は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "自分が封印されそうになった際、空間を切り替え仲間を分断するため",
       "ナルトたちから逃れるため",
@@ -596,7 +596,7 @@ export const hardQuestions = [
     id: 561,
     question:
       "うちはマダラが蘇生された際、彼が「月の眼計画」を始動するために初めに行った準備は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "輪廻眼の奪還",
       "無限月読の発動準備",
@@ -609,7 +609,7 @@ export const hardQuestions = [
     id: 562,
     question:
       "忍連合軍の中で、唯一「三尾の存在の鍵」を握っていたキャラクターの名前は誰ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["リン", "矢倉（霧隠れの三尾の人柱力）", "ガイ", "サスケ"],
     answer: "矢倉（霧隠れの三尾の人柱力）",
   },
@@ -617,7 +617,7 @@ export const hardQuestions = [
     id: 563,
     question:
       "ナルトが尾獣たちと心を通わせるために使った特別な精神的技法は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "尾獣チャクラモード",
       "チャクラの共鳴",
@@ -630,7 +630,7 @@ export const hardQuestions = [
     id: 564,
     question:
       "波の国でタズナが建設を進めていた橋が「ナルト大橋」と名付けられた理由は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "ナルトがガトー一味から村を守り、希望を与えたから",
       "ナルトがその橋を設計したから",
@@ -643,7 +643,7 @@ export const hardQuestions = [
     id: 565,
     question:
       "大筒木ハムラが彼の一族に遺した「力の戒律」の中で、最も重要とされるルールは何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "チャクラを人々の支配に使わないこと",
       "白眼の力を隠し続けること",
@@ -656,7 +656,7 @@ export const hardQuestions = [
     id: 566,
     question:
       "第四次忍界大戦で、忍連合軍の特別部隊「感知班」の指揮官を務めた人物は誰ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["マイト・ガイ", "青（霧隠れの忍）", "シカマル", "カカシ"],
     answer: "青（霧隠れの忍）",
   },
@@ -664,7 +664,7 @@ export const hardQuestions = [
     id: 567,
     question:
       "大筒木カグヤが支配した「溶岩空間」の地形の中で、唯一安全とされたエリアはどこですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "溶岩の島の一部",
       "空中にある浮島",
@@ -677,7 +677,7 @@ export const hardQuestions = [
     id: 568,
     question:
       "ナルトが六道仙人と対話した際、六道仙人がナルトに託した「理想」とは何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "最強の忍になること",
       "里の統一",
@@ -690,7 +690,7 @@ export const hardQuestions = [
     id: 569,
     question:
       "第四次忍界大戦で、サスケが使用した「地爆天星」の最も効果的な使用タイミングは何でしたか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "無限月読を解除するため",
       "尾獣を一時的に封じ込めるため",
@@ -702,7 +702,7 @@ export const hardQuestions = [
   {
     id: 570,
     question: "大蛇丸が開発した「人間再生術」に隠されたリスクとは何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "チャクラが枯渇する可能性がある",
       "術者自身の体が崩壊する可能性がある",
@@ -715,7 +715,7 @@ export const hardQuestions = [
     id: 571,
     question:
       "暁が結成される前にペイン（長門）が初めて使った大規模破壊術の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "神羅天征",
       "万象天引",
@@ -728,7 +728,7 @@ export const hardQuestions = [
     id: 572,
     question:
       "初代火影・千手柱間が「木ノ葉の里」を設立する前、忍界での彼の理想に反対していた忍の勢力名は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["風魔一族", "うちは一族の反対派", "竹取一族", "鞍馬一族"],
     answer: "うちは一族の反対派",
   },
@@ -736,7 +736,7 @@ export const hardQuestions = [
     id: 573,
     question:
       "うちはオビトが十尾の人柱力になった際に制御を困難にした理由は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "十尾の意識が完全には抑えられなかったため",
       "チャクラが足りなかったため",
@@ -749,7 +749,7 @@ export const hardQuestions = [
     id: 574,
     question:
       "第四次忍界大戦で、ナルトが尾獣の力を同時に引き出せるようになった理由は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "六道仙人のチャクラを受け取ったから",
       "尾獣たちがナルトを認めてチャクラを預けたから",
@@ -761,7 +761,7 @@ export const hardQuestions = [
   {
     id: 575,
     question: "うちはイタチが別天神をシスイから託された理由は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "サスケを救うため",
       "一族を止めるための最後の手段として使用するため",
@@ -774,7 +774,7 @@ export const hardQuestions = [
     id: 576,
     question:
       "ペイン（長門）が最初に輪廻眼を開眼した際のきっかけとなった事件は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "両親を殺された怒りと悲しみ",
       "自来也との出会い",
@@ -787,7 +787,7 @@ export const hardQuestions = [
     id: 577,
     question:
       "大筒木カグヤの従者である黒ゼツが、数千年にわたって隠れて行動していた理由は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "チャクラを貯めるため",
       "カグヤ復活のための計画を実行するため",
@@ -800,7 +800,7 @@ export const hardQuestions = [
     id: 578,
     question:
       "ナルトが九尾を最初に完全制御したときの状態を可能にした理由は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "仙人モードの習得",
       "母・クシナの助言と九尾の信頼を得たから",
@@ -813,7 +813,7 @@ export const hardQuestions = [
     id: 579,
     question:
       "忍界大戦の後に、火影ナルトが他里との外交のために最初に行った改革は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "里同士の技術共有と平和条約の締結",
       "統一試験の導入",
@@ -826,7 +826,7 @@ export const hardQuestions = [
     id: 580,
     question:
       "忍界大戦の発端となった「金角・銀角兄弟」が九尾の力を得た方法は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "九尾のチャクラを吸収したから",
       "九尾の胃の中で九尾の肉を食べたから",
@@ -838,7 +838,7 @@ export const hardQuestions = [
   {
     id: 581,
     question: "ナルトの螺旋丸の原型となった四代目火影の術の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "螺旋閃光超輪舞吼怒砲",
       "飛雷神の術",
@@ -850,14 +850,14 @@ export const hardQuestions = [
   {
     id: 582,
     question: "六道仙人が作り出した尾獣の元となった存在は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["九尾", "神樹", "十尾", "外道魔像"],
     answer: "十尾",
   },
   {
     id: 583,
     question: "大筒木ハゴロモの兄弟の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "大筒木インドラ",
       "大筒木アシュラ",
@@ -870,7 +870,7 @@ export const hardQuestions = [
     id: 584,
     question:
       "うずまき一族の封印術の中で特に禁術とされるものの名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["金剛封鎖", "四象封印", "八卦の封印式", "屍鬼封尽"],
     answer: "屍鬼封尽（しきふうじん）",
   },
@@ -878,7 +878,7 @@ export const hardQuestions = [
     id: 585,
     question:
       "うちは一族が里を裏切った原因の一つとされる事件の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "千手一族との対立",
       "九尾の襲撃事件",
@@ -891,7 +891,7 @@ export const hardQuestions = [
     id: 586,
     question:
       "第四次忍界大戦でサスケが使った写輪眼の最終奥義の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["天照", "月読", "神威", "須佐能乎"],
     answer: "須佐能乎（スサノオ）",
   },
@@ -899,14 +899,14 @@ export const hardQuestions = [
     id: 587,
     question:
       "木ノ葉隠れの里の最初の設立者であり、千手柱間と共同で里を作った人物の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["猿飛ヒルゼン", "うちはマダラ", "波風ミナト", "志村ダンゾウ"],
     answer: "うちはマダラ",
   },
   {
     id: 588,
     question: "うずまきクシナが人柱力に選ばれた理由は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "強いチャクラを持っていたから",
       "特殊な封印術の能力を持っていたから",
@@ -919,7 +919,7 @@ export const hardQuestions = [
     id: 589,
     question:
       "ペイン六道の構成体の中で、「人間道」が持つ特殊な能力は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "魂を抜き取る能力",
       "物体を修復する能力",
@@ -932,7 +932,7 @@ export const hardQuestions = [
     id: 590,
     question:
       "ナルトが使用した「九尾モード」と「仙人モード」を同時に使う術を何と呼びますか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "九尾チャクラ仙人モード",
       "仙法・超尾獣螺旋手裏剣",
@@ -944,21 +944,21 @@ export const hardQuestions = [
   {
     id: 591,
     question: "暁のメンバーで最も年長者とされるキャラクターの名前は誰ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["小南", "ゼツ", "飛段", "角都"],
     answer: "角都（かくず）",
   },
   {
     id: 592,
     question: "ナルトが「尾獣玉」を模倣して作り出した術の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["螺旋手裏剣", "超巨大螺旋手裏剣", "惑星螺旋丸", "尾獣玉螺旋丸"],
     answer: "超巨大螺旋手裏剣",
   },
   {
     id: 593,
     question: "自来也が命を懸けて発見したペインの秘密とは何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "本体は別に存在する",
       "長門が輪廻眼を持っていること",
@@ -971,7 +971,7 @@ export const hardQuestions = [
     id: 594,
     question:
       "第四次忍界大戦で使用された「穢土転生」の起源となった忍者の名前は誰ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "初代火影・千手柱間",
       "二代目火影・千手扉間",
@@ -983,7 +983,7 @@ export const hardQuestions = [
   {
     id: 595,
     question: "ナルトとヒナタが結婚する前に描かれた映画のタイトルは何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "ROAD TO NINJA -NARUTO THE MOVIE-",
       "THE LAST -NARUTO THE MOVIE-",
@@ -995,7 +995,7 @@ export const hardQuestions = [
   {
     id: 596,
     question: "ナルトが仙人モードを会得する際に克服した修行の課題は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "チャクラの制御",
       "印を結ぶ速度",
@@ -1007,7 +1007,7 @@ export const hardQuestions = [
   {
     id: 597,
     question: "第四次忍界大戦で使用された「連合忍軍」の総大将は誰ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["我愛羅", "ダルイ", "オオノキ", "綱手"],
     answer: "ダルイ",
   },
@@ -1015,7 +1015,7 @@ export const hardQuestions = [
     id: 598,
     question:
       "十尾の復活を防ぐためにカカシとオビトが使用した空間移動術の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["飛雷神の術", "神威", "天送の術", "万象天引"],
     answer: "神威（かむい）",
   },
@@ -1023,14 +1023,14 @@ export const hardQuestions = [
     id: 599,
     question:
       "木ノ葉隠れの里で「根」と呼ばれる部隊を指揮していた人物の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["猿飛ヒルゼン", "志村ダンゾウ", "はたけカカシ", "大蛇丸"],
     answer: "ダンゾウ",
   },
   {
     id: 600,
     question: "ヒルゼン（猿飛三代目火影）が持っていた召喚獣の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["猿魔", "ガマブン太", "マンダ", "カツユ"],
     answer: "猿魔（えんま）",
   },
@@ -1038,7 +1038,7 @@ export const hardQuestions = [
     id: 601,
     question:
       "ナルトが最初に九尾の力を意図的に引き出すことに成功した戦いの相手は誰ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["大蛇丸", "ペイン", "桃地再不斬", "我愛羅"],
     answer: "波の国での桃地再不斬",
   },
@@ -1046,7 +1046,7 @@ export const hardQuestions = [
     id: 602,
     question:
       "忍連合軍が十尾の尾獣玉を防ぐために使用した大規模な術の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["四赤陽陣", "五行封印", "口寄せ・羅生門", "無限月読"],
     answer: "四赤陽陣",
   },
@@ -1054,14 +1054,14 @@ export const hardQuestions = [
     id: 603,
     question:
       "第四次忍界大戦で、大筒木カグヤが支配した異空間の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["神威の空間", "無限月読の世界", "異界空間", "黄泉比良坂の空間"],
     answer: "無限月読の世界",
   },
   {
     id: 604,
     question: "うずまき一族が滅んだ理由は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "内部抗争",
       "病気",
@@ -1074,7 +1074,7 @@ export const hardQuestions = [
     id: 605,
     question:
       "うちはイタチが万華鏡写輪眼を開眼するきっかけとなった事件は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "両親の死",
       "うちは虐殺",
@@ -1087,7 +1087,7 @@ export const hardQuestions = [
     id: 606,
     question:
       "第四次忍界大戦でうちはマダラが完全体須佐能乎を使用した際の特徴は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "山をも覆う巨大さと鎧をまとった形状",
       "複数の剣を操る",
@@ -1099,7 +1099,7 @@ export const hardQuestions = [
   {
     id: 607,
     question: "十尾の器となった人物は誰ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["うちはマダラ", "うちはオビト", "大筒木カグヤ", "長門"],
     answer: "うちはオビト",
   },
@@ -1107,7 +1107,7 @@ export const hardQuestions = [
     id: 608,
     question:
       "忍界大戦で、ナルトが尾獣と心を通わせた後、最初に意識を共有した尾獣は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "九喇嘛（九尾）",
       "守鶴（一尾）",
@@ -1119,21 +1119,21 @@ export const hardQuestions = [
   {
     id: 609,
     question: "第四次忍界大戦の直前に「月の眼計画」を提唱した人物は誰ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["うちはマダラ", "うちはオビト", "黒ゼツ", "長門"],
     answer: "うちはマダラ（ただしオビトが実行役）",
   },
   {
     id: 610,
     question: "大筒木カグヤが十尾を生み出すために使った術の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["無限月読", "神樹の実の吸収", "共殺の灰骨", "八十神空撃"],
     answer: "神樹の実の吸収",
   },
   {
     id: 611,
     question: "暁が尾獣を封印するために使用した道具の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["天鎖斬月", "外道魔像", "六道仙人の宝具", "尾獣玉"],
     answer: "外道魔像",
   },
@@ -1141,14 +1141,14 @@ export const hardQuestions = [
     id: 612,
     question:
       "ナルトが使用した「螺旋丸」の中で、最も威力が大きい形態の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["大玉螺旋丸", "惑星螺旋丸", "超大玉螺旋丸", "仙法・超大玉螺旋丸"],
     answer: "超大玉螺旋丸",
   },
   {
     id: 613,
     question: "サスケが「輪廻眼」を開眼したきっかけは何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "イタチの死",
       "大蛇丸の実験",
@@ -1160,7 +1160,7 @@ export const hardQuestions = [
   {
     id: 614,
     question: "千手柱間が持つ特殊な血継限界の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["写輪眼", "白眼", "木遁", "溶遁"],
     answer: "木遁",
   },
@@ -1168,7 +1168,7 @@ export const hardQuestions = [
     id: 615,
     question:
       "第四次忍界大戦で戦死した忍連合軍の主要メンバーの名前を一人挙げてください。",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["シカマル", "ネジ", "リー", "チョウジ"],
     answer: "ネジ（日向ネジ）",
   },
@@ -1176,7 +1176,7 @@ export const hardQuestions = [
     id: 616,
     question:
       "九尾のチャクラを複数の忍に分け与えた際に、ナルトが使用した術の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "尾獣チャクラモード",
       "九尾チャクラモードの分与",
@@ -1188,14 +1188,14 @@ export const hardQuestions = [
   {
     id: 617,
     question: "うちはマダラが輪廻眼を初めて開眼したのは何歳の時ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["幼少期", "青年期", "壮年期", "死の直前（高齢期）"],
     answer: "死の直前（高齢期）",
   },
   {
     id: 618,
     question: "ナルトが友として接した三尾の人柱力の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["やぐら", "フウ", "ゆぎと", "老紫"],
     answer: "ゆぎと",
   },
@@ -1203,14 +1203,14 @@ export const hardQuestions = [
     id: 619,
     question:
       "ナルトが「六道の力」を完全に扱う際に覚醒した術の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["仙人モード", "九尾チャクラモード", "六道仙術", "六道輪廻"],
     answer: "六道仙術",
   },
   {
     id: 620,
     question: "ナルトが火影になる前に担当した木ノ葉隠れの里の職務は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["特別上忍", "医療忍者", "下忍の修行指導", "暗部"],
     answer: "下忍の修行指導",
   },
@@ -1218,14 +1218,14 @@ export const hardQuestions = [
     id: 621,
     question:
       "ナルトの火影就任後、里に設置された象徴的な施設の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["火影記念石碑", "忍術訓練場", "里の歴史博物館", "和平の碑"],
     answer: "火影記念石碑",
   },
   {
     id: 622,
     question: "大蛇丸が初めて「不死の研究」を開始した理由は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "強さを求めるため",
       "両親の死",
@@ -1237,7 +1237,7 @@ export const hardQuestions = [
   {
     id: 623,
     question: "木ノ葉隠れで医療忍術の基礎を作った人物の名前は誰ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["シズネ", "サクラ", "綱手", "カツユ"],
     answer: "綱手",
   },
@@ -1245,7 +1245,7 @@ export const hardQuestions = [
     id: 624,
     question:
       "第四次忍界大戦でガイが「八門遁甲」を解放した最終形態の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["朝孔雀", "昼虎", "夕象", "夜ガイ"],
     answer: "夜ガイ",
   },
@@ -1253,21 +1253,21 @@ export const hardQuestions = [
     id: 625,
     question:
       "ナルトが幼少期に初めて九尾と対話した際、九尾が見せた感情は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["友情", "信頼", "憎悪と怒り", "恐怖"],
     answer: "憎悪と怒り",
   },
   {
     id: 626,
     question: "大筒木カグヤを封印するために使用された術の名前は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: ["地爆天星", "六道・地爆天星", "神羅天征", "天照"],
     answer: "六道・地爆天星",
   },
   {
     id: 627,
     question: "ナルトが六道仙人から授かった陽の力が意味するものは何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "攻撃力の強化",
       "防御力の強化",
@@ -1279,7 +1279,7 @@ export const hardQuestions = [
   {
     id: 628,
     question: "サスケが最終的に選んだ里との距離を取る生き方の理由は何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "修行のため",
       "旅をするため",
@@ -1292,7 +1292,7 @@ export const hardQuestions = [
     id: 629,
     question:
       "うずまきナルトが最終的に手に入れた「忍の世界での役割」とは何ですか？",
-    image: "",
+    image: "/images/top/top42.jpeg",
     choices: [
       "伝説の忍",
       "忍界全体の平和の象徴（火影として忍びの絆を繋ぐ役割）",
