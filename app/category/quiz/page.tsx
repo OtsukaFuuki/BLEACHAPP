@@ -214,7 +214,9 @@ export default function Quiz() {
         問題 {current + 1} / {questions.length}
       </Typography>
 
-      <Typography sx={{ fontSize: 18, flexShrink: 0 }}>{q.question}</Typography>
+      <Typography sx={{ fontSize: 18, flexShrink: 0, minHeight: 50 }}>
+        {q.question}
+      </Typography>
 
       {q.image && (
         <Box
@@ -223,7 +225,7 @@ export default function Quiz() {
           alt="問題画像"
           sx={{
             maxWidth: "100%",
-            height: "300px",
+            height: "250px",
             my: 1,
             flexShrink: 0,
           }}
