@@ -244,11 +244,17 @@ export default function Quiz() {
         {q.question}
       </Typography>
 
-      {q.image && (
+      {(q.image ?? "/images/noimage/noimg.png") && (
         <Box
           component="img"
-          src={q.image}
+          src={q.image ?? "/images/noimage/noimg.png"}
           alt="問題画像"
+          onError={(e) => {
+            const target = e.target as HTMLImageElement;
+            if (target.src.indexOf("/images/noimage/noimg.png") === -1) {
+              target.src = "/images/noimage/noimg.png";
+            }
+          }}
           sx={{
             maxWidth: "100%",
             height: "250px",
