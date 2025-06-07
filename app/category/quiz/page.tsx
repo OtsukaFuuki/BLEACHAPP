@@ -317,7 +317,7 @@ export default function Quiz() {
               onClick={() => handleAnswer(choice)}
               disabled={!!selected}
               sx={{
-                fontSize: 14,
+                fontSize: 12,
                 p: 1,
                 color: "#000",
                 borderColor,
