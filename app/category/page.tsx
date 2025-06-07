@@ -76,7 +76,7 @@ export default function CategoryPage() {
           sx={{
             width: "100%",
             maxWidth: 500,
-            p: 4,
+            p: 3,
             borderRadius: 3,
             textAlign: "center",
             backgroundColor: "#fff",
@@ -86,13 +86,13 @@ export default function CategoryPage() {
           <Typography
             variant="h5"
             fontWeight="bold"
-            sx={{ mb: 4, color: "#263238" }}
+            sx={{ mb: 3, color: "#263238" }}
           >
             クイズの設定
           </Typography>
 
           {/* 問題数選択 */}
-          <Box sx={{ mb: 4 }}>
+          <Box sx={{ mb: 2 }}>
             <FormControl fullWidth>
               <InputLabel id="count-select-label">問題数</InputLabel>
               <Select
@@ -184,8 +184,8 @@ export default function CategoryPage() {
         size="medium"
         sx={{
           position: "fixed",
-          bottom: 24,
-          right: 24,
+          bottom: 12,
+          right: 12,
           background: "linear-gradient(to right, #f57c00, #e53935)", // ナルト風グラデ
           color: "#fff",
           fontWeight: "bold",
