@@ -11,6 +11,11 @@ import {
   SelectChangeEvent,
   FormControl,
   InputLabel,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogActions,
+  Fab,
 } from "@mui/material";
 
 const difficultyLevels = [
@@ -25,117 +30,182 @@ export default function CategoryPage() {
   const router = useRouter();
   const [level, setLevel] = useState("easy");
   const [count, setCount] = useState(5);
+  const [selectedLevel, setSelectedLevel] = useState("");
+  const [openConfirm, setOpenConfirm] = useState(false);
 
   const handleCountChange = (event: SelectChangeEvent) => {
     setCount(Number(event.target.value));
   };
 
+  const handleLevelClick = (value: string) => {
+    setSelectedLevel(value);
+    setOpenConfirm(true);
+  };
+
+  const handleClose = () => {
+    setOpenConfirm(false);
+  };
+
   const handleStartQuiz = () => {
-    router.push(`/category/quiz?level=${level}&count=${count}`);
+    setLevel(selectedLevel);
+    setOpenConfirm(false);
+    router.push(`/category/quiz?level=${selectedLevel}&count=${count}`);
+  };
+
+  const getLevelLabel = (value: string) => {
+    const levelObj = difficultyLevels.find((lvl) => lvl.value === value);
+    return levelObj ? levelObj.label : "";
   };
 
   return (
-    <Box
-      sx={{
-        minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: "#fef5e7",
-        px: 2,
-      }}
-    >
+    <>
       <Box
         sx={{
-          width: "100%",
-          maxWidth: 500,
-          p: 4,
-          borderRadius: 3,
-          textAlign: "center",
-          backgroundColor: "#fff",
-          boxShadow: 3,
+          minHeight: "100vh",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundImage: "url('/images/top/top6.jpeg')",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          px: 2,
         }}
       >
-        <Typography
-          variant="h5"
-          fontWeight="bold"
-          sx={{ mb: 4, color: "#263238" }}
+        <Box
+          sx={{
+            width: "100%",
+            maxWidth: 500,
+            p: 4,
+            borderRadius: 3,
+            textAlign: "center",
+            backgroundColor: "#fff",
+            boxShadow: 3,
+          }}
         >
-          クイズの設定
-        </Typography>
-
-        {/* 難易度選択 */}
-        <Box sx={{ mb: 4 }}>
           <Typography
-            variant="subtitle1"
+            variant="h5"
             fontWeight="bold"
-            gutterBottom
-            color="#263238"
+            sx={{ mb: 4, color: "#263238" }}
           >
-            難易度
+            クイズの設定
           </Typography>
-          <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-            {difficultyLevels.map(({ label, value, color }) => (
-              <Button
-                key={value}
-                variant="contained"
-                onClick={() => setLevel(value)}
-                fullWidth
-                sx={{
-                  backgroundColor: color,
-                  color: "#fff",
-                  fontWeight: level === value ? "bold" : "normal",
-                  opacity: level === value ? 1 : 0.8,
-                  "&:hover": {
-                    backgroundColor: color,
-                    opacity: 0.9,
-                  },
-                }}
+
+          {/* 問題数選択 */}
+          <Box sx={{ mb: 4 }}>
+            <FormControl fullWidth>
+              <InputLabel id="count-select-label">問題数</InputLabel>
+              <Select
+                labelId="count-select-label"
+                value={count.toString()}
+                label="問題数"
+                onChange={handleCountChange}
               >
-                {label}
-              </Button>
-            ))}
+                {questionCounts.map((num) => (
+                  <MenuItem key={num} value={num}>
+                    {num} 問
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+          </Box>
+
+          {/* 難易度選択 */}
+          <Box sx={{ mb: 4 }}>
+            <Typography variant="subtitle1" fontWeight="bold" color="#263238">
+              難易度
+            </Typography>
+            <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+              {difficultyLevels.map(({ label, value, color }) => (
+                <Button
+                  key={value}
+                  variant="contained"
+                  onClick={() => handleLevelClick(value)}
+                  fullWidth
+                  sx={{
+                    backgroundColor: color,
+                    color: "#fff",
+                    fontWeight: level === value ? "bold" : "normal",
+                    opacity: level === value ? 1 : 0.8,
+                    "&:hover": {
+                      backgroundColor: color,
+                      opacity: 0.9,
+                    },
+                  }}
+                >
+                  {label}
+                </Button>
+              ))}
+            </Box>
           </Box>
         </Box>
 
-        {/* 問題数選択 */}
-        <Box sx={{ mb: 4 }}>
-          <FormControl fullWidth>
-            <InputLabel id="count-select-label">問題数</InputLabel>
-            <Select
-              labelId="count-select-label"
-              value={count.toString()}
-              label="問題数"
-              onChange={handleCountChange}
+        {/* 確認ダイアログ */}
+        <Dialog open={openConfirm} onClose={handleClose}>
+          <DialogTitle sx={{ fontWeight: "bold" }}>
+            選択した設定の確認
+          </DialogTitle>
+          <DialogContent
+            dividers
+            sx={{
+              minWidth: 550,
+              minHeight: 200,
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <Box sx={{ mt: 2 }}>
+              <Typography sx={{ fontWeight: "bold" }}>
+                問題数：{count} 問
+              </Typography>
+              <Typography sx={{ fontWeight: "bold", mt: 2 }}>
+                難易度：{getLevelLabel(selectedLevel)}
+              </Typography>
+            </Box>
+          </DialogContent>
+          <DialogActions sx={{ p: 3 }}>
+            <Button onClick={handleClose} color="inherit" variant="outlined">
+              戻る
+            </Button>
+            <Button
+              onClick={handleStartQuiz}
+              sx={{ backgroundColor: "#fbc02d" }}
+              variant="contained"
             >
-              {questionCounts.map((num) => (
-                <MenuItem key={num} value={num}>
-                  {num} 問
-                </MenuItem>
-              ))}
-            </Select>
-          </FormControl>
-        </Box>
-
-        {/* クイズ開始ボタン */}
-        <Button
-          variant="contained"
-          size="large"
-          sx={{
-            width: "100%",
-            mt: 1,
-            backgroundColor: "#ef6c00",
-            color: "#fff",
-            fontWeight: "bold",
-            "&:hover": {
-              backgroundColor: "#bf360c",
-            },
-          }}
-          onClick={handleStartQuiz}
-        >
-          クイズを始める
-        </Button>
+              問題へ進む
+            </Button>
+          </DialogActions>
+        </Dialog>
       </Box>
-    </Box>
+
+      {/* Topへ戻るボタン */}
+      <Fab
+        color="primary"
+        size="medium"
+        sx={{
+          position: "fixed",
+          bottom: 24,
+          right: 24,
+          background: "linear-gradient(to right, #f57c00, #e53935)", // ナルト風グラデ
+          color: "#fff",
+          fontWeight: "bold",
+          "&:hover": {
+            background: "linear-gradient(to right, #ef6c00, #d32f2f)",
+          },
+          animation: "bounce 1s infinite",
+          "@keyframes bounce": {
+            "0%, 100%": {
+              transform: "translateY(0)",
+            },
+            "50%": {
+              transform: "translateY(-6px)",
+            },
+          },
+        }}
+        onClick={() => router.push("/")}
+      >
+        Top
+      </Fab>
+    </>
   );
 }
