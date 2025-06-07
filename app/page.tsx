@@ -44,8 +44,8 @@ export default function Home() {
     >
       <Box
         sx={{
-          width: 250,
-          height: 100,
+          width: 160,
+          height: 60,
           backgroundImage: 'url("/images/logo/logo2.png")',
           backgroundSize: "cover",
           backgroundPosition: "center",
