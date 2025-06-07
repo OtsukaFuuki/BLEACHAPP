@@ -12,6 +12,7 @@ export default function Home() {
     "/images/top/top14.jpeg",
     "/images/top/top42.jpeg",
     "/images/top/top43.jpeg",
+    "/images/top/top60.jpeg",
   ];
 
   const [randomImage, setRandomImage] = useState<string | null>(null);
@@ -43,7 +44,7 @@ export default function Home() {
       <Box
         sx={{
           width: 160,
-          height: 60,
+          height: 65,
           backgroundImage: 'url("/images/logo/logo2.png")',
           backgroundSize: "cover",
           backgroundPosition: "center",
