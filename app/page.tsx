@@ -57,7 +57,7 @@ export default function Home() {
           left: 20,
           zIndex: 1,
         }}
-      ></Box>
+      />
       <Button
         sx={{
           color: "#fff",
