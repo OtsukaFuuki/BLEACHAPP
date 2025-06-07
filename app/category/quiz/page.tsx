@@ -386,7 +386,7 @@ export default function Quiz() {
             color: current === 0 ? "#999" : "#333",
           }}
         >
-          ＜ 前の問題
+          ＜ 前へ
         </Button>
 
         {/* トップに戻る（ナルト風グラデーション + ボーダー） */}
@@ -395,7 +395,7 @@ export default function Quiz() {
           sx={{
             minWidth: 140,
             background: "transparent",
-            border: "2px solid transparent",
+            border: "1px solid transparent",
             borderImage: "linear-gradient(to right, #ffa726, #ef5350) 1",
             backgroundImage: "linear-gradient(to right, #ffa726, #ef5350)",
             backgroundClip: "text",
@@ -422,7 +422,7 @@ export default function Quiz() {
             color: current === questions.length - 1 ? "#999" : "#333",
           }}
         >
-          次の問題 ＞
+          次へ ＞
         </Button>
       </Box>
     </Container>
