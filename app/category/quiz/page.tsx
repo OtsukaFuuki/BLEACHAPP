@@ -139,53 +139,71 @@ export default function Quiz() {
     );
   }
 
+  //クイズ終了時の表示
   if (isFinished) {
     return (
-      <Container maxWidth="sm" sx={{ py: 4 }}>
-        <Typography variant="h4" align="center">
-          クイズ終了！
-        </Typography>
-        <Typography variant="h6" align="center">
-          あなたのスコア：{score} / {questions.length}
-        </Typography>
+      <Box
+        sx={{
+          backgroundImage: 'url("/images/top/top32.jpeg")', // 画像のパス（public/images/以下）
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          minHeight: "100vh",
+        }}
+      >
+        <Container maxWidth="sm" sx={{ py: 4 }}>
+          <Typography variant="h4" align="center">
+            クイズ終了！
+          </Typography>
+          <Typography variant="h6" align="center">
+            あなたのスコア：{score} / {questions.length}
+          </Typography>
 
-        {/* 回答履歴一覧 */}
-        <Box
-          sx={{
-            maxHeight: 400,
-            overflowY: "auto",
-            mt: 3,
-            pr: 1, // スクロールバーが被らないように右に少し余白
-          }}
-        >
-          {answers.map((ans, i) => {
-            const isCorrect = ans.selected === ans.correct;
-            return (
-              <Box key={i} mb={2} p={2} border="1px solid" borderRadius={2}>
-                <Typography fontWeight="bold">
-                  {i + 1}. {ans.question}
-                </Typography>
-
-                <Typography
-                  sx={{
-                    fontWeight: "bold",
-                  }}
+          {/* 回答履歴一覧 */}
+          <Box
+            sx={{
+              maxHeight: 400,
+              overflowY: "auto",
+              mt: 3,
+              pr: 1, // スクロールバーが被らないように右に少し余白
+            }}
+          >
+            {answers.map((ans, i) => {
+              const isCorrect = ans.selected === ans.correct;
+              return (
+                <Box
+                  key={i}
+                  mb={2}
+                  p={2}
+                  border="2px solid"
+                  borderRadius={2}
+                  borderColor={isCorrect ? "success.light" : "error.light"}
+                  bgcolor="#ffffffd2"
                 >
-                  あなたの答え: {ans.selected}
-                </Typography>
+                  <Typography fontWeight="bold">
+                    {i + 1}. {ans.question}
+                  </Typography>
+                  <Typography sx={{ fontWeight: "bold" }}>
+                    あなたの答え: {ans.selected}
+                  </Typography>
 
-                <Typography>正解: {ans.correct}</Typography>
-              </Box>
-            );
-          })}
-        </Box>
+                  <Typography>正解: {ans.correct}</Typography>
+                </Box>
+              );
+            })}
+          </Box>
 
-        <Box textAlign="center" mt={4}>
-          <Button variant="contained" color="primary" onClick={handleRestart}>
-            もう一度プレイする
-          </Button>
-        </Box>
-      </Container>
+          <Box textAlign="center" mt={4}>
+            <Button
+              variant="contained"
+              color="primary"
+              sx={{ backgroundColor: "#fbc02d" }}
+              onClick={handleRestart}
+            >
+              もう一度プレイする
+            </Button>
+          </Box>
+        </Container>
+      </Box>
     );
   }
 
