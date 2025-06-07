@@ -65,7 +65,7 @@ export default function CategoryPage() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          backgroundImage: "url('/images/top/top6.jpeg')",
+          backgroundImage: "url('/images/top/top24.jpeg')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
@@ -96,7 +96,7 @@ export default function CategoryPage() {
             p: 3,
             borderRadius: 3,
             textAlign: "center",
-            backgroundColor: "#fff",
+            backgroundColor: "#ffffffd2",
             boxShadow: 3,
           }}
         >
@@ -132,7 +132,9 @@ export default function CategoryPage() {
             <Typography variant="subtitle1" fontWeight="bold" color="#263238">
               難易度
             </Typography>
-            <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+            <Box
+              sx={{ display: "flex", flexDirection: "column", gap: 2, mt: 1 }}
+            >
               {difficultyLevels.map(({ label, value, color }) => (
                 <Button
                   key={value}
@@ -172,10 +174,10 @@ export default function CategoryPage() {
             }}
           >
             <Box sx={{ mt: 2 }}>
-              <Typography sx={{ fontWeight: "bold" }}>
+              <Typography sx={{ fontWeight: "bold", fontSize: 16 }}>
                 問題数：{count} 問
               </Typography>
-              <Typography sx={{ fontWeight: "bold", mt: 2 }}>
+              <Typography sx={{ fontWeight: "bold", fontSize: 16, mt: 2 }}>
                 難易度：{getLevelLabel(selectedLevel)}
               </Typography>
             </Box>
