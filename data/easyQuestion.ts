@@ -9,7 +9,7 @@ export const easyQuestions = [
   {
     id: 2,
     question:
-      "ナルトが所属していた班の番号は？ナルトが所属していた班の番号は？",
+      "ナルトが所属していた班の番号は？ナルトが所属していた班の番号は？ナルトが所属していた班の番号は？",
     image: "/images/top/top6.jpeg",
     choices: ["第1班", "第3班", "第7班", "第10班"],
     answer: "第7班",
