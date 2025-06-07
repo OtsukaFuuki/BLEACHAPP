@@ -74,6 +74,23 @@ export default function CategoryPage() {
       >
         <Box
           sx={{
+            width: 160,
+            height: 65,
+            backgroundImage: 'url("/images/logo/logo2.png")',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            justifyContent: "left",
+            alignItems: "left",
+            display: "flex",
+            position: "absolute",
+            top: 20,
+            left: 20,
+            zIndex: 1,
+          }}
+        />
+        <Box
+          sx={{
             width: "100%",
             maxWidth: 500,
             p: 3,
