@@ -342,37 +342,89 @@ export default function Quiz() {
           mt: 1,
           display: "flex",
           justifyContent: "center",
-          gap: 4,
+          gap: 2, // 距離を近づける
           pt: 2,
           borderTop: "1px solid #ccc",
           flexShrink: 0,
         }}
       >
+        {/* 前の問題 */}
         <Button
-          variant="outlined"
           onClick={handlePrev}
           disabled={current === 0}
-          sx={{ minWidth: 100 }}
+          sx={{
+            minWidth: 120,
+            fontWeight: "bold",
+            border: "none",
+            background: "transparent",
+            backgroundImage:
+              current === 0
+                ? "none"
+                : "linear-gradient(to right, #ffa726, #ef5350)",
+            backgroundClip: current === 0 ? "unset" : "text",
+            WebkitBackgroundClip: current === 0 ? "unset" : "text",
+            color: current === 0 ? "#999" : "transparent",
+            WebkitTextFillColor: current === 0 ? "#999" : "transparent",
+            "&:hover": {
+              backgroundImage:
+                current === 0
+                  ? "none"
+                  : "linear-gradient(to right, #fb8c00, #e53935)",
+            },
+          }}
         >
-          前の問題
+          ＜ 前の問題
         </Button>
 
+        {/* トップに戻る（ナルト風テキストグラデーション） */}
         <Button
-          variant="contained"
-          color="secondary"
           onClick={handleRestart}
-          sx={{ minWidth: 120 }}
+          sx={{
+            minWidth: 140,
+            fontWeight: "bold",
+            border: "none",
+            background: "transparent",
+            backgroundImage: "linear-gradient(to right, #ffa726, #ef5350)",
+            backgroundClip: "text",
+            WebkitBackgroundClip: "text", // Chrome用
+            color: "transparent",
+            WebkitTextFillColor: "transparent", // Chrome用
+            "&:hover": {
+              backgroundImage: "linear-gradient(to right, #fb8c00, #e53935)",
+            },
+          }}
         >
           トップに戻る
         </Button>
 
+        {/* 次の問題 */}
         <Button
-          variant="outlined"
           onClick={handleNext}
           disabled={current === questions.length - 1}
-          sx={{ minWidth: 100 }}
+          sx={{
+            minWidth: 120,
+            fontWeight: "bold",
+            border: "none",
+            background: "transparent",
+            backgroundImage:
+              current === questions.length - 1
+                ? "none"
+                : "linear-gradient(to right, #ffa726, #ef5350)",
+            backgroundClip: current === questions.length - 1 ? "unset" : "text",
+            WebkitBackgroundClip:
+              current === questions.length - 1 ? "unset" : "text",
+            color: current === questions.length - 1 ? "#999" : "transparent",
+            WebkitTextFillColor:
+              current === questions.length - 1 ? "#999" : "transparent",
+            "&:hover": {
+              backgroundImage:
+                current === questions.length - 1
+                  ? "none"
+                  : "linear-gradient(to right, #fb8c00, #e53935)",
+            },
+          }}
         >
-          次の問題
+          次の問題 ＞
         </Button>
       </Box>
     </Container>
