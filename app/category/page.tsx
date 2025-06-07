@@ -101,7 +101,7 @@ export default function CategoryPage() {
           }}
         >
           <Typography
-            variant="h5"
+            variant="subtitle1"
             fontWeight="bold"
             sx={{ mb: 3, color: "#263238" }}
           >
