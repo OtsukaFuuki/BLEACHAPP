@@ -273,7 +273,6 @@ export default function Quiz() {
               disabled={!!selected}
               sx={{
                 fontSize: "1rem",
-                borderWidth: 2,
                 borderColor,
                 backgroundColor: bgColor,
                 textAlign: "left",
@@ -342,7 +341,7 @@ export default function Quiz() {
           mt: 1,
           display: "flex",
           justifyContent: "center",
-          gap: 2, // 距離を近づける
+          gap: 1, // 距離を近づける
           pt: 2,
           borderTop: "1px solid #ccc",
           flexShrink: 0,
@@ -357,39 +356,28 @@ export default function Quiz() {
             fontWeight: "bold",
             border: "none",
             background: "transparent",
-            backgroundImage:
-              current === 0
-                ? "none"
-                : "linear-gradient(to right, #ffa726, #ef5350)",
-            backgroundClip: current === 0 ? "unset" : "text",
-            WebkitBackgroundClip: current === 0 ? "unset" : "text",
-            color: current === 0 ? "#999" : "transparent",
-            WebkitTextFillColor: current === 0 ? "#999" : "transparent",
-            "&:hover": {
-              backgroundImage:
-                current === 0
-                  ? "none"
-                  : "linear-gradient(to right, #fb8c00, #e53935)",
-            },
+            color: current === 0 ? "#999" : "#333",
           }}
         >
           ＜ 前の問題
         </Button>
 
-        {/* トップに戻る（ナルト風テキストグラデーション） */}
+        {/* トップに戻る（ナルト風グラデーション + ボーダー） */}
         <Button
           onClick={handleRestart}
           sx={{
             minWidth: 140,
             fontWeight: "bold",
-            border: "none",
             background: "transparent",
+            border: "2px solid transparent",
+            borderImage: "linear-gradient(to right, #ffa726, #ef5350) 1",
             backgroundImage: "linear-gradient(to right, #ffa726, #ef5350)",
             backgroundClip: "text",
-            WebkitBackgroundClip: "text", // Chrome用
+            WebkitBackgroundClip: "text",
             color: "transparent",
-            WebkitTextFillColor: "transparent", // Chrome用
+            WebkitTextFillColor: "transparent",
             "&:hover": {
+              borderImage: "linear-gradient(to right, #fb8c00, #e53935) 1",
               backgroundImage: "linear-gradient(to right, #fb8c00, #e53935)",
             },
           }}
@@ -406,22 +394,7 @@ export default function Quiz() {
             fontWeight: "bold",
             border: "none",
             background: "transparent",
-            backgroundImage:
-              current === questions.length - 1
-                ? "none"
-                : "linear-gradient(to right, #ffa726, #ef5350)",
-            backgroundClip: current === questions.length - 1 ? "unset" : "text",
-            WebkitBackgroundClip:
-              current === questions.length - 1 ? "unset" : "text",
-            color: current === questions.length - 1 ? "#999" : "transparent",
-            WebkitTextFillColor:
-              current === questions.length - 1 ? "#999" : "transparent",
-            "&:hover": {
-              backgroundImage:
-                current === questions.length - 1
-                  ? "none"
-                  : "linear-gradient(to right, #fb8c00, #e53935)",
-            },
+            color: current === questions.length - 1 ? "#999" : "#333",
           }}
         >
           次の問題 ＞
