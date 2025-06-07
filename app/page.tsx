@@ -12,8 +12,6 @@ export default function Home() {
     "/images/top/top14.jpeg",
     "/images/top/top42.jpeg",
     "/images/top/top43.jpeg",
-    "/images/top/top28.jpeg",
-    "/images/top/top39.jpeg",
   ];
 
   const [randomImage, setRandomImage] = useState<string | null>(null);
