@@ -355,7 +355,6 @@ export default function Quiz() {
           disabled={current === 0}
           sx={{
             minWidth: 120,
-            fontWeight: "bold",
             border: "none",
             background: "transparent",
             color: current === 0 ? "#999" : "#333",
@@ -369,7 +368,6 @@ export default function Quiz() {
           onClick={handleRestart}
           sx={{
             minWidth: 140,
-            fontWeight: "bold",
             background: "transparent",
             border: "2px solid transparent",
             borderImage: "linear-gradient(to right, #ffa726, #ef5350) 1",
