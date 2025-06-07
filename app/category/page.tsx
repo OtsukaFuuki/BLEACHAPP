@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import {
-  Container,
   Typography,
   Button,
   Box,
@@ -15,21 +14,17 @@ import {
 } from "@mui/material";
 
 const difficultyLevels = [
-  { label: "初級", value: "easy" },
-  { label: "中級", value: "normal" },
-  { label: "上級", value: "hard" },
+  { label: "初級", value: "easy", color: "#fbc02d" },
+  { label: "中級", value: "normal", color: "#ef6c00" },
+  { label: "上級", value: "hard", color: "#c62828" },
 ];
 
-const questionCounts = [5, 10, 15, 20, 25, 30]; // 将来的に増えても対応可能
+const questionCounts = [5, 10, 15, 20, 25, 30];
 
 export default function CategoryPage() {
   const router = useRouter();
   const [level, setLevel] = useState("easy");
   const [count, setCount] = useState(5);
-
-  const handleLevelChange = (event: SelectChangeEvent) => {
-    setLevel(event.target.value);
-  };
 
   const handleCountChange = (event: SelectChangeEvent) => {
     setCount(Number(event.target.value));
@@ -40,52 +35,107 @@ export default function CategoryPage() {
   };
 
   return (
-    <Container maxWidth="sm" sx={{ py: 6, textAlign: "center" }}>
-      <Typography variant="h4" gutterBottom>
-        難易度と問題数を選択してください
-      </Typography>
-
-      <Box sx={{ mt: 4 }}>
-        <Typography variant="h6">難易度</Typography>
-        <Box sx={{ display: "flex", justifyContent: "center", gap: 2, mt: 1 }}>
-          {difficultyLevels.map(({ label, value }) => (
-            <Button
-              key={value}
-              variant={level === value ? "contained" : "outlined"}
-              onClick={() => setLevel(value)}
-            >
-              {label}
-            </Button>
-          ))}
-        </Box>
-      </Box>
-
-      <Box sx={{ mt: 4 }}>
-        <FormControl fullWidth>
-          <InputLabel id="count-select-label">問題数</InputLabel>
-          <Select
-            labelId="count-select-label"
-            value={count.toString()}
-            label="問題数"
-            onChange={handleCountChange}
-          >
-            {questionCounts.map((num) => (
-              <MenuItem key={num} value={num}>
-                {num} 問
-              </MenuItem>
-            ))}
-          </Select>
-        </FormControl>
-      </Box>
-
-      <Button
-        variant="contained"
-        size="large"
-        sx={{ mt: 6 }}
-        onClick={handleStartQuiz}
+    <Box
+      sx={{
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "#fef5e7",
+        px: 2,
+      }}
+    >
+      <Box
+        sx={{
+          width: "100%",
+          maxWidth: 500,
+          p: 4,
+          borderRadius: 3,
+          textAlign: "center",
+          backgroundColor: "#fff",
+          boxShadow: 3,
+        }}
       >
-        クイズを始める
-      </Button>
-    </Container>
+        <Typography
+          variant="h5"
+          fontWeight="bold"
+          sx={{ mb: 4, color: "#263238" }}
+        >
+          クイズの設定
+        </Typography>
+
+        {/* 難易度選択 */}
+        <Box sx={{ mb: 4 }}>
+          <Typography
+            variant="subtitle1"
+            fontWeight="bold"
+            gutterBottom
+            color="#263238"
+          >
+            難易度
+          </Typography>
+          <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+            {difficultyLevels.map(({ label, value, color }) => (
+              <Button
+                key={value}
+                variant="contained"
+                onClick={() => setLevel(value)}
+                fullWidth
+                sx={{
+                  backgroundColor: color,
+                  color: "#fff",
+                  fontWeight: level === value ? "bold" : "normal",
+                  opacity: level === value ? 1 : 0.8,
+                  "&:hover": {
+                    backgroundColor: color,
+                    opacity: 0.9,
+                  },
+                }}
+              >
+                {label}
+              </Button>
+            ))}
+          </Box>
+        </Box>
+
+        {/* 問題数選択 */}
+        <Box sx={{ mb: 4 }}>
+          <FormControl fullWidth>
+            <InputLabel id="count-select-label">問題数</InputLabel>
+            <Select
+              labelId="count-select-label"
+              value={count.toString()}
+              label="問題数"
+              onChange={handleCountChange}
+            >
+              {questionCounts.map((num) => (
+                <MenuItem key={num} value={num}>
+                  {num} 問
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+        </Box>
+
+        {/* クイズ開始ボタン */}
+        <Button
+          variant="contained"
+          size="large"
+          sx={{
+            width: "100%",
+            mt: 1,
+            backgroundColor: "#ef6c00",
+            color: "#fff",
+            fontWeight: "bold",
+            "&:hover": {
+              backgroundColor: "#bf360c",
+            },
+          }}
+          onClick={handleStartQuiz}
+        >
+          クイズを始める
+        </Button>
+      </Box>
+    </Box>
   );
 }
