@@ -168,8 +168,7 @@ export default function CategoryPage() {
           <DialogContent
             dividers
             sx={{
-              minWidth: 550,
-              minHeight: 200,
+              maxWidth: 400,
               display: "flex",
             }}
           >
@@ -183,12 +182,13 @@ export default function CategoryPage() {
             </Box>
             <Box
               sx={{
-                backgroundImage: 'url("/images/Dialog/dialog.png")',
-                backgroundPosition: "center",
-                width: "200px",
-                height: "300px",
-                backgroundSize: "cover",
+                backgroundImage: 'url("/images/Dialog/dialog5.png")',
+                backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                width: "120px",
+                aspectRatio: "120 / 120",
+                ml: -3,
               }}
             />
           </DialogContent>
