@@ -179,16 +179,16 @@ export default function Quiz() {
                   borderColor={isCorrect ? "success.light" : "error.light"}
                   bgcolor="#ffffffd2"
                 >
-                  <Typography>
+                  <Typography sx={{ fontSize: 14 }}>
                     {i + 1}. {ans.question}
                   </Typography>
                   <Box sx={{ display: "flex", alignItems: "center", mt: 1 }}>
                     <Typography
-                      sx={{ fontWeight: "bold", width: "100px", fontSize: 14 }}
+                      sx={{ fontWeight: "bold", width: "100px", fontSize: 12 }}
                     >
                       あなたの答え
                     </Typography>
-                    <Typography sx={{ fontWeight: "bold", fontSize: 14 }}>
+                    <Typography sx={{ fontWeight: "bold", fontSize: 12 }}>
                       : {ans.selected}
                     </Typography>
                   </Box>
@@ -198,12 +198,12 @@ export default function Quiz() {
                       sx={{
                         fontWeight: "bold",
                         width: "100px",
-                        fontSize: 14,
+                        fontSize: 12,
                       }}
                     >
                       正解
                     </Typography>
-                    <Typography sx={{ fontWeight: "bold", fontSize: 14 }}>
+                    <Typography sx={{ fontWeight: "bold", fontSize: 12 }}>
                       : {ans.correct}
                     </Typography>
                   </Box>
