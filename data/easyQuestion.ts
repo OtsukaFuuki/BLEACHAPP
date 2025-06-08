@@ -2,7 +2,7 @@ export const easyQuestions = [
   {
     id: 1,
     question: "うずまきナルトの口癖は？",
-    image: "/images/top/top6.jpeg",
+    image: "/images/noimage/noimg.png",
     choices: ["だってばよ", "まいど", "なんでやねん", "ござる"],
     answer: "だってばよ",
   },
@@ -10,21 +10,21 @@ export const easyQuestions = [
     id: 2,
     question:
       "ナルトが所属していた班の番号は？ナルトが所属していた班の番号は？ナルトが所属していた班の番号は？",
-    image: "/images/top/top6.jpeg",
+    image: "/images/noimage/noimg.png",
     choices: ["第1班", "第3班", "第7班", "第10班"],
     answer: "第7班",
   },
   {
     id: 3,
     question: "ナルトの師匠で「伝説の三忍」の一人は？",
-    image: "/images/top/top6.jpeg",
+    image: "/images/noimage/noimg.png",
     choices: ["カカシ", "オロチマル", "自来也", "ガイ"],
     answer: "自来也",
   },
   {
     id: 4,
     question: "サスケのフルネームは？",
-    image: "/images/top/top6.jpeg",
+    image: "/images/noimage/noimg.png",
     choices: [
       "うちはサスケ",
       "はたけサスケ",
@@ -36,21 +36,21 @@ export const easyQuestions = [
   {
     id: 5,
     question: "ナルトの母親の名前は？",
-    image: "/images/top/top6.jpeg",
+    image: "/images/noimage/noimg.png",
     choices: ["ヒナタ", "ツナデ", "クシナ", "ミコト"],
     answer: "クシナ",
   },
   {
     id: 6,
     question: "ナルトの父親で四代目火影は？",
-    image: "/images/top/top6.jpeg",
+    image: "/images/noimage/noimg.png",
     choices: ["ミナト", "ヒルゼン", "カカシ", "アスマ"],
     answer: "ミナト",
   },
   {
     id: 7,
     question: "ナルトが最初に習得した必殺技は？",
-    image: "/images/top/top6.jpeg",
+    image: "/images/noimage/noimg.png",
     choices: ["螺旋丸", "千鳥", "火遁", "影分身の術"],
     answer: "影分身の術",
   },
@@ -64,14 +64,14 @@ export const easyQuestions = [
   {
     id: 9,
     question: "サスケの兄の名前は？",
-    image: "/images/top/top6.jpeg",
+    image: "/images/noimage/noimg.png",
     choices: ["うちはイタチ", "うちはマダラ", "うちはサラダ", "うちはシスイ"],
     answer: "うちはイタチ",
   },
   {
     id: 10,
     question: "ナルトが里の人に嫌われていた理由は？",
-    image: "/images/top/top6.jpeg",
+    image: "/images/noimage/noimg.png",
     choices: [
       "いたずらばかりするから",
       "口が悪いから",

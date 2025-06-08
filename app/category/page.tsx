@@ -162,7 +162,7 @@ export default function CategoryPage() {
 
         {/* 確認ダイアログ */}
         <Dialog open={openConfirm} onClose={handleClose}>
-          <DialogTitle sx={{ fontWeight: "bold" }}>
+          <DialogTitle sx={{ fontWeight: "bold", fontSize: 16 }}>
             選択した設定の確認
           </DialogTitle>
           <DialogContent
@@ -171,17 +171,26 @@ export default function CategoryPage() {
               minWidth: 550,
               minHeight: 200,
               display: "flex",
-              flexDirection: "column",
             }}
           >
-            <Box sx={{ mt: 2 }}>
-              <Typography sx={{ fontWeight: "bold", fontSize: 16 }}>
+            <Box sx={{ mt: 2, mr: 5 }}>
+              <Typography sx={{ fontWeight: "bold", fontSize: 14 }}>
                 問題数：{count} 問
               </Typography>
-              <Typography sx={{ fontWeight: "bold", fontSize: 16, mt: 2 }}>
+              <Typography sx={{ fontWeight: "bold", fontSize: 14, mt: 2 }}>
                 難易度：{getLevelLabel(selectedLevel)}
               </Typography>
             </Box>
+            <Box
+              sx={{
+                backgroundImage: 'url("/images/Dialog/dialog.png")',
+                backgroundPosition: "center",
+                width: "200px",
+                height: "300px",
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+              }}
+            />
           </DialogContent>
           <DialogActions sx={{ p: 3 }}>
             <Button onClick={handleClose} color="inherit" variant="outlined">
