@@ -111,10 +111,11 @@ export default function Quiz() {
     ]);
   };
 
+  // topへ戻る
   const handleRestart = () => {
     router.push("/category");
   };
-
+  // 前へ
   const handlePrev = () => {
     if (current > 0) {
       setCurrent(current - 1);
@@ -122,7 +123,7 @@ export default function Quiz() {
       setShowIcon(null);
     }
   };
-
+  //次へ
   const handleNext = () => {
     if (current + 1 < questions.length) {
       setCurrent(current + 1);

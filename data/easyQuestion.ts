@@ -2,7 +2,7 @@ export const easyQuestions = [
   {
     id: 1,
     question: "うずまきナルトの口癖は？",
-    image: "/images/noimage/noimg.png",
+    image: "/images/data/easy/_1.jpg",
     choices: ["だってばよ", "まいど", "なんでやねん", "ござる"],
     answer: "だってばよ",
   },
@@ -71,7 +71,7 @@ export const easyQuestions = [
   {
     id: 10,
     question: "ナルトが里の人に嫌われていた理由は？",
-    image: "/images/noimage/noimg.png",
+    image: "/images/data/easy/_1.jpg",
     choices: [
       "いたずらばかりするから",
       "口が悪いから",
@@ -83,14 +83,14 @@ export const easyQuestions = [
   {
     id: 11,
     question: "木ノ葉隠れの里の火影は何代目まで登場する？",
-    image: "/images/kages.jpg",
+    image: "/images/data/easy/_6.jpg",
     choices: ["五代目", "六代目", "七代目", "八代目"],
     answer: "七代目",
   },
   {
     id: 12,
     question: "ナルトの幼なじみで白眼の使い手は？",
-    image: "/images/hinata.jpg",
+    image: "/images/data/easy/_7.JPG",
     choices: ["サクラ", "ヒナタ", "テマリ", "イノ"],
     answer: "ヒナタ",
   },
@@ -146,21 +146,21 @@ export const easyQuestions = [
   {
     id: 20,
     question: "ナルトが住む里の名前は？",
-    image: "/images/konoha.jpg",
+    image: "/images/data/easy/_8.JPG",
     choices: ["砂隠れの里", "雲隠れの里", "霧隠れの里", "木ノ葉隠れの里"],
     answer: "木ノ葉隠れの里",
   },
   {
     id: 21,
     question: "我愛羅が操るものは？",
-    image: "/images/gaara.jpg",
+    image: "/images/data/easy/_9.JPG",
     choices: ["水", "風", "砂", "炎"],
     answer: "砂",
   },
   {
     id: 22,
     question: "サスケが抜けた理由は？",
-    image: "/images/sasuke-leaves.jpg",
+    image: "/images/data/easy/_10.JPG",
     choices: [
       "イタチを倒すため",
       "ナルトがうるさいから",
@@ -172,14 +172,14 @@ export const easyQuestions = [
   {
     id: 23,
     question: "「口寄せの術」で自来也が召喚するのは？",
-    image: "/images/gamabunta.jpg",
+    image: "/images/data/easy/_11.JPG",
     choices: ["蛇", "犬", "蛙", "熊"],
     answer: "蛙",
   },
   {
     id: 24,
     question: "ナルトの最大の目標は？",
-    image: "/images/hokage.jpg",
+    image: "/images/data/easy/_12.jpg",
     choices: [
       "世界征服",
       "サスケを倒す",
@@ -191,14 +191,14 @@ export const easyQuestions = [
   {
     id: 25,
     question: "「暁」の目的は？",
-    image: "/images/akatsuki.jpg",
+    image: "/images/data/easy/_13.JPG",
     choices: ["ラーメン屋経営", "尾獣集め", "火影就任", "世界平和"],
     answer: "尾獣集め",
   },
   {
     id: 26,
     question: "テマリの弟の名前は？",
-    image: "/images/kankuro.jpg",
+    image: "/images/data/easy/_14.JPG",
     choices: ["サスケ", "カンクロウ", "リー", "ネジ"],
     answer: "カンクロウ",
   },
@@ -217,14 +217,14 @@ export const easyQuestions = [
   {
     id: 28,
     question: "ナルトが通っていたアカデミーの教師は？",
-    image: "/images/iruka.jpg",
+    image: "/images/data/easy/_15.JPG",
     choices: ["アスマ", "イルカ", "カカシ", "紅"],
     answer: "イルカ",
   },
   {
     id: 29,
     question: "ナルトがよく食べる料理は？",
-    image: "/images/ramen.jpg",
+    image: "/images/data/easy/_16.JPG",
     choices: ["カレー", "うどん", "ラーメン", "チャーハン"],
     answer: "ラーメン",
   },
