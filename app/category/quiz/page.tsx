@@ -230,8 +230,8 @@ export default function Quiz() {
     <Container
       maxWidth="sm"
       sx={{
-        py: 2,
-        px: 5,
+        py: 1,
+        px: 3,
         textAlign: "center",
         display: "flex",
         flexDirection: "column",
