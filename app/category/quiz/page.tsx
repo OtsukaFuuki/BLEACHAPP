@@ -183,10 +183,12 @@ export default function Quiz() {
                     {i + 1}. {ans.question}
                   </Typography>
                   <Box sx={{ display: "flex", alignItems: "center", mt: 1 }}>
-                    <Typography sx={{ fontWeight: "bold", width: "100px" }}>
+                    <Typography
+                      sx={{ fontWeight: "bold", width: "100px", fontSize: 14 }}
+                    >
                       あなたの答え
                     </Typography>
-                    <Typography sx={{ fontWeight: "bold" }}>
+                    <Typography sx={{ fontWeight: "bold", fontSize: 14 }}>
                       : {ans.selected}
                     </Typography>
                   </Box>
@@ -196,11 +198,12 @@ export default function Quiz() {
                       sx={{
                         fontWeight: "bold",
                         width: "100px",
+                        fontSize: 14,
                       }}
                     >
                       正解
                     </Typography>
-                    <Typography sx={{ fontWeight: "bold" }}>
+                    <Typography sx={{ fontWeight: "bold", fontSize: 14 }}>
                       : {ans.correct}
                     </Typography>
                   </Box>
