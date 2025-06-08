@@ -168,11 +168,12 @@ export default function CategoryPage() {
           <DialogContent
             dividers
             sx={{
-              maxWidth: 400,
+              width: 360,
+              minHeight: 200,
               display: "flex",
             }}
           >
-            <Box sx={{ mt: 2, mr: 5 }}>
+            <Box sx={{ mt: 2 }}>
               <Typography sx={{ fontWeight: "bold", fontSize: 14 }}>
                 問題数：{count} 問
               </Typography>
@@ -186,9 +187,8 @@ export default function CategoryPage() {
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
-                width: "120px",
-                aspectRatio: "120 / 120",
-                ml: -3,
+                width: "250px",
+                aspectRatio: "280 / 220",
               }}
             />
           </DialogContent>
