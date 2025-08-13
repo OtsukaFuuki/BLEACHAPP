@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { Button, Box } from "@mui/material";
-import { useEffect, useState } from "react";
+import { useRandomImage } from "@/hooks/useRandomImage";
 
 const Home = () => {
   const router = useRouter();
@@ -15,13 +15,8 @@ const Home = () => {
     "/images/top/top60.jpeg",
   ];
 
-  const [randomImage, setRandomImage] = useState<string | null>(null);
-
-  //画面初期表示時にランダムな背景画像を設定
-  useEffect(() => {
-    const index = Math.floor(Math.random() * backgroundImages.length);
-    setRandomImage(backgroundImages[index]);
-  }, []);
+  // ランダムな画像を取得するカスタムフック
+  const randomImage = useRandomImage(backgroundImages);
 
   const handleStart = () => {
     router.push("/category");
