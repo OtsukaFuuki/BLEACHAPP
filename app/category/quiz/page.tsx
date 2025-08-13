@@ -1,5 +1,5 @@
 "use client";
-import { Container, Typography } from "@mui/material";
+import { Button, Container, Typography } from "@mui/material";
 import { QuestionCard } from "./components/QuestionCard";
 import { AnswerHistory } from "./components/AnswerHistory";
 import { NavigationButtons } from "./components/NavigationButtons";
@@ -21,17 +21,40 @@ const QuizPage = () => {
     handleNext,
   } = useQuiz();
 
-  if (questions.length === 0) return <div>問題を読み込み中...</div>;
-
+  if (questions.length === 0) {
+    return (
+      <Container maxWidth="sm" sx={{ py: 4, textAlign: "center" }}>
+        <Typography variant="h6">問題を読み込み中...</Typography>
+      </Container>
+    );
+  }
   if (isFinished) {
     return (
-      <Container>
+      <Container
+        maxWidth="sm"
+        sx={{
+          py: 1,
+          px: 3,
+          textAlign: "center",
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100vh",
+          mt: 3,
+        }}
+      >
         <Typography variant="h4">クイズ終了！</Typography>
-        <Typography>
-          スコア：{score} / {questions.length}
+        <Typography sx={{ mt: 1, fontSize: 18 }}>
+          あなたのスコア：{score} / {questions.length}
         </Typography>
         <AnswerHistory answers={answers} />
-        <button onClick={handleRestart}>もう一度プレイする</button>
+        <Button
+          variant="contained"
+          color="primary"
+          sx={{ backgroundColor: "#fbc02d" }}
+          onClick={handleRestart}
+        >
+          もう一度プレイする
+        </Button>{" "}
       </Container>
     );
   }
@@ -39,17 +62,33 @@ const QuizPage = () => {
   const q = questions[current];
 
   return (
-    <Container>
-      <Typography>
+    <Container
+      maxWidth="sm"
+      sx={{
+        py: 1,
+        px: 3,
+        textAlign: "center",
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+      }}
+    >
+      <Typography
+        variant="subtitle1"
+        sx={{ display: "flex", justifyContent: "right", mb: 1 }}
+      >
         問題 {current + 1} / {questions.length}
       </Typography>
+
       <QuestionCard
         question={q}
         selected={selected}
         showIcon={showIcon}
         onAnswer={handleAnswer}
       />
+
       <ResultOverlay showIcon={showIcon} correctAnswer={q.answer} />
+
       <NavigationButtons
         current={current}
         total={questions.length}
