@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { Button, Box } from "@mui/material";
 import { useEffect, useState } from "react";
 
-export default function Home() {
+const Home = () => {
   const router = useRouter();
 
   const backgroundImages = [
@@ -17,6 +17,7 @@ export default function Home() {
 
   const [randomImage, setRandomImage] = useState<string | null>(null);
 
+  //画面初期表示時にランダムな背景画像を設定
   useEffect(() => {
     const index = Math.floor(Math.random() * backgroundImages.length);
     setRandomImage(backgroundImages[index]);
@@ -87,4 +88,5 @@ export default function Home() {
       </Button>
     </Box>
   );
-}
+};
+export default Home;
