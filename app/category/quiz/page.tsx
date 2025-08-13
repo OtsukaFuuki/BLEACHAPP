@@ -21,8 +21,13 @@ const QuizPage = () => {
     handleNext,
   } = useQuiz();
 
-  if (questions.length === 0) return <div>問題を読み込み中...</div>;
-
+  if (questions.length === 0) {
+    return (
+      <Container maxWidth="sm" sx={{ py: 4, textAlign: "center" }}>
+        <Typography variant="h6">問題を読み込み中...</Typography>
+      </Container>
+    );
+  }
   if (isFinished) {
     return (
       <Container
