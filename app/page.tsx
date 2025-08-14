@@ -72,6 +72,10 @@ const Home = () => {
       />
       <Button
         sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
           color: "#fff",
           fontWeight: "bold",
           width: "100%",
@@ -96,6 +100,8 @@ const Home = () => {
         onClick={handleStart}
       >
         ここをクリック
+        <br />
+        <span style={{ fontSize: "10px" }}>※一護の目が開くまで待ってね!!</span>
       </Button>
     </Box>
   );
