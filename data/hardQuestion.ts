@@ -150,4 +150,11 @@ export const hardQuestions = [
     ],
     answer: "尸魂界での決戦",
   },
+  {
+    id: 24,
+    question: "平子真子の斬魄刀、逆撫の解号は？",
+    image: "/images/noimage/noimg.png",
+    choices: ["呑め", "倒れろ", "起きろ", "開け"],
+    answer: "倒れろ",
+  },
 ];
