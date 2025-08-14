@@ -11,6 +11,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
+      <head>
+        <title>ブリーチクイズアプリ</title>
+        <meta
+          name="description"
+          content="「BLEACH（ブリーチ）のキャラクターや技、卍解名に関するクイズを楽しめるサイトです。初心者から上級者まで遊べます。」"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body>
         <ThemeProvider theme={theme}>
           <CssBaseline />
