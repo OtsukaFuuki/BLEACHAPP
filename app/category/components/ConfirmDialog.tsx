@@ -36,9 +36,15 @@ export const ConfirmDialog = ({
       </DialogTitle>
       <DialogContent
         dividers
-        sx={{ width: 360, minHeight: 200, display: "flex" }}
+        sx={{
+          maxWidth: 360,
+          minHeight: 200,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
       >
-        <Box sx={{ mt: 2 }}>
+        <Box sx={{ width: 120, alignSelf: "flex-start" }}>
           <Typography sx={{ fontWeight: "bold", fontSize: 14 }}>
             問題数：{count} 問
           </Typography>
@@ -48,12 +54,14 @@ export const ConfirmDialog = ({
         </Box>
         <Box
           sx={{
-            backgroundImage: 'url("/images/Dialog/dialog5.png")',
+            backgroundImage: 'url("/images/Dialog/dialog_1.png")',
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             width: "250px",
-            aspectRatio: "280 / 220",
+            aspectRatio: "250 / 220",
+            top: "15px",
+            position: "relative",
           }}
         />
       </DialogContent>
