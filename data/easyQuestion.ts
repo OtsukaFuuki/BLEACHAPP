@@ -20,46 +20,7 @@ export const easyQuestions = [
     choices: ["浦原商店", "井上織姫の部屋", "一護の押入れ", "阿散井恋次の部屋"],
     answer: "一護の押入れ",
   },
-  {
-    id: 4,
-    question: "二刀一体の斬魄刀を持つのは、浮竹十四郎とあと1人は？",
-    image: "/images/noimage/noimg.png",
-    choices: ["朽木白哉", "狛村左陣", "京楽春水", "浮竹十三郎"],
-    answer: "京楽春水",
-  },
-  {
-    id: 5,
-    question: "特記戦力の一人、更木剣八が警戒されていたものは？",
-    image: "/images/noimage/noimg.png",
-    choices: ["潜在能力", "霊圧", "戦闘力", "冷静な判断力"],
-    answer: "戦闘力",
-  },
-  {
-    id: 6,
-    question: "久南白（くなんぱく）が自称している役職は？",
-    image: "/images/noimage/noimg.png",
-    choices: [
-      "スーパー副隊長",
-      "ハイパー副隊長",
-      "ウルトラ副隊長",
-      "メガ副隊長",
-    ],
-    answer: "スーパー副隊長",
-  },
-  {
-    id: 7,
-    question: "尸魂界にて一護に敗れた十一番隊三席の男性は？",
-    image: "/images/noimage/noimg.png",
-    choices: ["綾瀬川弓親", "斑目一角", "大前田希千代", "伊勢七緒"],
-    answer: "斑目一角",
-  },
-  {
-    id: 8,
-    question: "浦原喜助の卍解の名前は？",
-    image: "/images/noimage/noimg.png",
-    choices: ["観音開紅姫改メ", "千手紅姫大観", "氷塊紅姫改メ", "焔輪紅姫改"],
-    answer: "観音開紅姫改メ",
-  },
+
   {
     id: 9,
     question: "『滅却師』とは何と読む？",
@@ -125,14 +86,7 @@ export const easyQuestions = [
     choices: ["井上織姫", "石田雨竜", "浦原喜助", "京楽春水"],
     answer: "石田雨竜",
   },
-  {
-    id: 18,
-    question:
-      "完現術『クロス・オブ・スキャッフォルド』を使用する初代死神代行は？",
-    image: "/images/noimage/noimg.png",
-    choices: ["黒崎一護", "浦原喜助", "市丸ギン", "白哉"],
-    answer: "浦原喜助",
-  },
+
   {
     id: 19,
     question: "朽木ルキアが現世で寝泊まりしている場所は？",
@@ -169,20 +123,6 @@ export const easyQuestions = [
     answer: "脚力",
   },
   {
-    id: 24,
-    question: "平子真子の斬魄刀、逆撫の解号は？",
-    image: "/images/noimage/noimg.png",
-    choices: ["呑め", "倒れろ", "起きろ", "開け"],
-    answer: "倒れろ",
-  },
-  {
-    id: 25,
-    question: "破道の七十三は？",
-    image: "/images/noimage/noimg.png",
-    choices: ["飛竜撃賊震天雷砲", "黒棺", "双蓮蒼火墜", "六杖光牢"],
-    answer: "双蓮蒼火墜",
-  },
-  {
     id: 26,
     question: "虚の力を持っている死神の集団は？",
     image: "/images/noimage/noimg.png",
@@ -190,22 +130,10 @@ export const easyQuestions = [
     answer: "ヴァイザード",
   },
   {
-    id: 27,
-    question: "「黒腔」なんと読む？",
-    image: "/images/noimage/noimg.png",
-    choices: ["うぇこむんど", "らすのーちぇす", "でぃあぶろ", "がるがんた"],
-    answer: "がるがんた",
-  },
-  {
     id: 28,
-    question: "「こんじきあしそぎじぞう」の漢字は？",
+    question: "「こんじきあしそぎじぞう」の正しい漢字表記は？",
     image: "/images/noimage/noimg.png",
-    choices: [
-      "金色脚削地蔵",
-      "金色脚削地蔵尊",
-      "金色足削地蔵",
-      "金色脚そぎ地蔵",
-    ],
+    choices: ["金色脚削地蔵", "金色脚削自蔵", "金色足削時蔵", "金色脚曾木地蔵"],
     answer: "金色脚削地蔵",
   },
 ];
