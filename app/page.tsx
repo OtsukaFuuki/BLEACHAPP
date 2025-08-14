@@ -25,20 +25,48 @@ const Home = () => {
   };
 
   return (
+    // <Box
+    //   sx={{
+    //     py: 6,
+    //     display: "flex",
+    //     flexDirection: "column",
+    //     alignItems: "center",
+    //     justifyContent: "center",
+    //     height: "100vh",
+    //     backgroundImage: randomImage ? `url(${randomImage})` : "none",
+    //     backgroundSize: "cover",
+    //     backgroundPosition: "center",
+    //     backgroundRepeat: "no-repeat",
+    //   }}
+    // >
     <Box
       sx={{
-        py: 6,
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
+        position: "relative",
+        width: "100%",
         height: "100vh",
-        backgroundImage: randomImage ? `url(${randomImage})` : "none",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
+        overflow: "hidden",
       }}
     >
+      {/* 背景動画 */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          zIndex: -1, // コンテンツより背面
+        }}
+      >
+        <source src="/video/top_background.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
       {/* <Box
         sx={{
           width: 160,
