@@ -40,10 +40,8 @@ const getQueryParams = () => {
 
 export const useQuiz = () => {
   const router = useRouter();
-
   const [level, setLevel] = useState("easy");
   const [count, setCount] = useState(5);
-
   const [questions, setQuestions] = useState<Question[]>([]);
   const [current, setCurrent] = useState(0);
   const [selected, setSelected] = useState<string | null>(null);
@@ -70,7 +68,6 @@ export const useQuiz = () => {
 
     const shuffled = shuffleArray(sourceQuestions);
     setQuestions(shuffled.slice(0, count));
-
     setCurrent(0);
     setSelected(null);
     setShowIcon(null);
@@ -100,7 +97,6 @@ export const useQuiz = () => {
     setTimeout(() => {
       setShowIcon(null);
       setSelected(null);
-
       if (current + 1 < questions.length) setCurrent((prev) => prev + 1);
       else setIsFinished(true);
     }, 1000);

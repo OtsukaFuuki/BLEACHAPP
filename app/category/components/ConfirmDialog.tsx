@@ -8,6 +8,7 @@ import {
   Box,
   Typography,
   Button,
+  useTheme,
 } from "@mui/material";
 
 type ConfirmDialogProps = {
@@ -27,6 +28,7 @@ export const ConfirmDialog = ({
   onClose,
   onConfirm,
 }: ConfirmDialogProps) => {
+  const theme = useTheme();
   return (
     <Dialog open={open} onClose={onClose}>
       <DialogTitle sx={{ fontWeight: "bold", fontSize: 16 }}>
@@ -61,7 +63,7 @@ export const ConfirmDialog = ({
         </Button>
         <Button
           onClick={onConfirm}
-          sx={{ backgroundColor: "#fbc02d" }}
+          sx={{ backgroundColor: theme.palette.custom.gold }}
           variant="contained"
         >
           問題へ進む

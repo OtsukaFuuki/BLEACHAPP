@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Typography, useTheme } from "@mui/material";
 
 type Difficulty = "easy" | "normal" | "hard";
 
@@ -10,20 +10,39 @@ type DifficultySelectorProps = {
   onSelect: (level: Difficulty) => void;
 };
 
-const difficultyLevels: { label: string; value: Difficulty; color: string }[] =
-  [
-    { label: "初級", value: "easy", color: "#fbc02d" },
-    { label: "中級", value: "normal", color: "#ef6c00" },
-    { label: "上級", value: "hard", color: "#c62828" },
-  ];
-
 const DifficultySelector: FC<DifficultySelectorProps> = ({
   level,
   onSelect,
 }) => {
+  const theme = useTheme();
+  const difficultyLevels: {
+    label: string;
+    value: Difficulty;
+    color: string;
+  }[] = [
+    {
+      label: "初級",
+      value: "easy",
+      color: theme.palette.custom.difficultyEasy,
+    },
+    {
+      label: "中級",
+      value: "normal",
+      color: theme.palette.custom.difficultyNormal,
+    },
+    {
+      label: "上級",
+      value: "hard",
+      color: theme.palette.custom.difficultyHard,
+    },
+  ];
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: 2, mt: 1 }}>
-      <Typography variant="subtitle1" fontWeight="bold" color="#263238">
+      <Typography
+        variant="subtitle1"
+        fontWeight="bold"
+        color={theme.palette.custom.textDarkBlue}
+      >
         難易度
       </Typography>
       {difficultyLevels.map(({ label, value, color }) => (
@@ -34,7 +53,7 @@ const DifficultySelector: FC<DifficultySelectorProps> = ({
           fullWidth
           sx={{
             backgroundColor: color,
-            color: "#fff",
+            color: theme.palette.custom.white,
             fontWeight: level === value ? "bold" : "normal",
             opacity: level === value ? 1 : 0.8,
             "&:hover": {
