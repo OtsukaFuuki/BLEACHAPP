@@ -3,11 +3,11 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Typography, useTheme } from "@mui/material";
-import CategoryLayout from "./components/categoryLayout";
-import { ConfirmDialog } from "./components/confirmDialog";
-import DifficultySelector from "./components/difficultySelector";
-import QuizCountSelect from "./components/quizCountSelect";
-import { TopButton } from "./components/topButton";
+import CategoryLayout from "./components/CategoryLayout";
+import { ConfirmDialog } from "./components/ConfirmDialog";
+import DifficultySelector from "./components/DifficultySelector";
+import QuizCountSelect from "./components/QuizCountSelect";
+import { TopButton } from "./components/TopButton";
 
 type Difficulty = "easy" | "normal" | "hard";
 

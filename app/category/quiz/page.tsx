@@ -1,10 +1,10 @@
 "use client";
 import { Button, Container, Typography, useTheme } from "@mui/material";
 import { useQuiz } from "@/hooks/useQuiz";
-import { AnswerHistory } from "./components/answerHistory";
-import { NavigationButtons } from "./components/navigationButtons";
-import { QuestionCard } from "./components/questionCard";
-import { ResultOverlay } from "./components/resultOverlay";
+import { AnswerHistory } from "./components/AnswerHistory";
+import { NavigationButtons } from "./components/NavigationButtons";
+import { QuestionCard } from "./components/QuestionCard";
+import { ResultOverlay } from "./components/ResultOverlay";
 
 const QuizPage = () => {
   const theme = useTheme();
