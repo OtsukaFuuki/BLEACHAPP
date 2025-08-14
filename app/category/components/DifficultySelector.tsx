@@ -2,8 +2,7 @@
 
 import { FC } from "react";
 import { Box, Button, Typography, useTheme } from "@mui/material";
-
-type Difficulty = "easy" | "normal" | "hard";
+import { Difficulty } from "../types/Difficulty";
 
 type DifficultySelectorProps = {
   level: Difficulty;
@@ -33,6 +32,11 @@ const DifficultySelector: FC<DifficultySelectorProps> = ({
     {
       label: "上級",
       value: "hard",
+      color: theme.palette.custom.difficultyHard,
+    },
+    {
+      label: "卍解",
+      value: "bankai",
       color: theme.palette.custom.difficultyHard,
     },
   ];
