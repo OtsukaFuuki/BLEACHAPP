@@ -1,12 +1,14 @@
 "use client";
-import { Button, Container, Typography } from "@mui/material";
-import { QuestionCard } from "./components/QuestionCard";
-import { AnswerHistory } from "./components/AnswerHistory";
-import { NavigationButtons } from "./components/NavigationButtons";
-import { ResultOverlay } from "./components/ResultOverlay";
+import { Button, Container, Typography, useTheme } from "@mui/material";
 import { useQuiz } from "@/hooks/useQuiz";
+import { AnswerHistory } from "./components/answerHistory";
+import { NavigationButtons } from "./components/navigationButtons";
+import { QuestionCard } from "./components/questionCard";
+import { ResultOverlay } from "./components/resultOverlay";
 
 const QuizPage = () => {
+  const theme = useTheme();
+
   const {
     questions,
     current,
@@ -23,7 +25,7 @@ const QuizPage = () => {
 
   if (questions.length === 0) {
     return (
-      <Container maxWidth="sm" sx={{ py: 4, textAlign: "center" }}>
+      <Container maxWidth="sm" sx={{ py: 4, textAlign: "center", mt: 4 }}>
         <Typography variant="h6">問題を読み込み中...</Typography>
       </Container>
     );
@@ -50,16 +52,15 @@ const QuizPage = () => {
         <Button
           variant="contained"
           color="primary"
-          sx={{ backgroundColor: "#fbc02d" }}
+          sx={{ backgroundColor: theme.palette.custom.gold, mt: 3 }}
           onClick={handleRestart}
         >
           もう一度プレイする
-        </Button>{" "}
+        </Button>
       </Container>
     );
   }
-
-  const q = questions[current];
+  const currentQuestion = questions[current];
 
   return (
     <Container
@@ -81,13 +82,16 @@ const QuizPage = () => {
       </Typography>
 
       <QuestionCard
-        question={q}
+        question={currentQuestion}
         selected={selected}
         showIcon={showIcon}
         onAnswer={handleAnswer}
       />
 
-      <ResultOverlay showIcon={showIcon} correctAnswer={q.answer} />
+      <ResultOverlay
+        showIcon={showIcon}
+        correctAnswer={currentQuestion.answer}
+      />
 
       <NavigationButtons
         current={current}

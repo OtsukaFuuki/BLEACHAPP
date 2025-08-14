@@ -7,6 +7,7 @@ import {
   Select,
   MenuItem,
   SelectChangeEvent,
+  useTheme,
 } from "@mui/material";
 
 type QuizCountSelectProps = {
@@ -17,6 +18,7 @@ type QuizCountSelectProps = {
 const questionCounts = [5, 10, 15, 20, 25, 30];
 
 const QuizCountSelect: FC<QuizCountSelectProps> = ({ count, onChange }) => {
+  const theme = useTheme();
   const handleChange = (event: SelectChangeEvent) => {
     onChange(Number(event.target.value));
   };
@@ -29,7 +31,7 @@ const QuizCountSelect: FC<QuizCountSelectProps> = ({ count, onChange }) => {
         value={count.toString()}
         label="問題数"
         onChange={handleChange}
-        sx={{ backgroundColor: "#fff", borderRadius: 1 }}
+        sx={{ backgroundColor: theme.palette.custom.white, borderRadius: 1 }}
       >
         {questionCounts.map((num) => (
           <MenuItem key={num} value={num}>

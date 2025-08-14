@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Typography } from "@mui/material";
-import CategoryLayout from "./components/CategoryLayout";
-import DifficultySelector from "./components/DifficultySelector";
-import QuizCountSelect from "./components/QuizCountSelect";
-import { TopButton } from "./components/TopButton";
-import { ConfirmDialog } from "./components/ConfirmDialog";
+import { Typography, useTheme } from "@mui/material";
+import CategoryLayout from "./components/categoryLayout";
+import { ConfirmDialog } from "./components/confirmDialog";
+import DifficultySelector from "./components/difficultySelector";
+import QuizCountSelect from "./components/quizCountSelect";
+import { TopButton } from "./components/topButton";
 
 type Difficulty = "easy" | "normal" | "hard";
 
@@ -19,7 +19,7 @@ const difficultyLabelMap: Record<Difficulty, string> = {
 
 export default function CategoryPage() {
   const router = useRouter();
-
+  const theme = useTheme();
   const [count, setCount] = useState<number>(5);
   const [level, setLevel] = useState<Difficulty>("easy");
   const [selectedLevel, setSelectedLevel] = useState<Difficulty | "">("");
@@ -47,7 +47,7 @@ export default function CategoryPage() {
         <Typography
           variant="subtitle1"
           fontWeight="bold"
-          sx={{ mb: 3, color: "#263238" }}
+          sx={{ mb: 3, color: theme.palette.custom.textDarkBlue }}
         >
           クイズの設定
         </Typography>

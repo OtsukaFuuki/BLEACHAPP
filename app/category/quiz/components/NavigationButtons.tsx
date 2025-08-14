@@ -1,6 +1,7 @@
 "use client";
 
 import { Box, Button } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 type Props = {
   current: number;
@@ -17,6 +18,8 @@ export const NavigationButtons: React.FC<Props> = ({
   onNext,
   onRestart,
 }) => {
+  const theme = useTheme();
+
   return (
     <Box
       sx={{
@@ -25,7 +28,7 @@ export const NavigationButtons: React.FC<Props> = ({
         justifyContent: "center",
         gap: 1,
         pt: 2,
-        borderTop: "1px solid #ccc",
+        borderTop: `1px solid ${theme.palette.custom.grayBorder}`,
         flexShrink: 0,
       }}
     >
@@ -37,7 +40,10 @@ export const NavigationButtons: React.FC<Props> = ({
           minWidth: 120,
           border: "none",
           background: "transparent",
-          color: current === 0 ? "#999" : "#333",
+          color:
+            current === 0
+              ? theme.palette.custom.grayDisabled
+              : theme.palette.custom.textDark,
         }}
       >
         ＜ 前へ
@@ -50,15 +56,15 @@ export const NavigationButtons: React.FC<Props> = ({
           minWidth: 140,
           background: "transparent",
           border: "1px solid transparent",
-          borderImage: "linear-gradient(to right, #ffa726, #ef5350) 1",
-          backgroundImage: "linear-gradient(to right, #ffa726, #ef5350)",
+          borderImage: `${theme.palette.custom.topButtonGradient} 1`,
+          backgroundImage: theme.palette.custom.topButtonGradient,
           backgroundClip: "text",
           WebkitBackgroundClip: "text",
           color: "transparent",
           WebkitTextFillColor: "transparent",
           "&:hover": {
-            borderImage: "linear-gradient(to right, #fb8c00, #e53935) 1",
-            backgroundImage: "linear-gradient(to right, #fb8c00, #e53935)",
+            borderImage: `${theme.palette.custom.topButtonGradientHover} 1`,
+            backgroundImage: theme.palette.custom.topButtonGradientHover,
           },
         }}
       >
@@ -73,7 +79,10 @@ export const NavigationButtons: React.FC<Props> = ({
           minWidth: 120,
           border: "none",
           background: "transparent",
-          color: current === total - 1 ? "#999" : "#333",
+          color:
+            current === total - 1
+              ? theme.palette.custom.grayDisabled
+              : theme.palette.custom.textDark,
         }}
       >
         次へ ＞

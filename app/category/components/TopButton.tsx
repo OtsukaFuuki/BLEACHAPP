@@ -1,10 +1,11 @@
 "use client";
 
-import { Fab } from "@mui/material";
+import { Fab, useTheme } from "@mui/material";
 import { useRouter } from "next/navigation";
 
 export const TopButton = () => {
   const router = useRouter();
+  const theme = useTheme();
 
   return (
     <Fab
@@ -14,11 +15,10 @@ export const TopButton = () => {
         position: "fixed",
         bottom: 12,
         right: 12,
-        background: "linear-gradient(to right, #f57c00, #e53935)",
-        color: "#fff",
-        fontWeight: "bold",
+        background: theme.palette.custom.narutoGradient,
+        color: theme.palette.custom.white,
         "&:hover": {
-          background: "linear-gradient(to right, #ef6c00, #d32f2f)",
+          background: theme.palette.custom.narutoGradientHover,
         },
         animation: "bounce 1s infinite",
         "@keyframes bounce": {
