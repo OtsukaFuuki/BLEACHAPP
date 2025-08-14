@@ -25,20 +25,6 @@ const Home = () => {
   };
 
   return (
-    // <Box
-    //   sx={{
-    //     py: 6,
-    //     display: "flex",
-    //     flexDirection: "column",
-    //     alignItems: "center",
-    //     justifyContent: "center",
-    //     height: "100vh",
-    //     backgroundImage: randomImage ? `url(${randomImage})` : "none",
-    //     backgroundSize: "cover",
-    //     backgroundPosition: "center",
-    //     backgroundRepeat: "no-repeat",
-    //   }}
-    // >
     <Box
       sx={{
         position: "relative",
@@ -67,11 +53,11 @@ const Home = () => {
         Your browser does not support the video tag.
       </video>
 
-      {/* <Box
+      <Box
         sx={{
           width: 160,
           height: 65,
-          backgroundImage: 'url("/images/logo/logo2.png")',
+          backgroundImage: 'url("/images/logo/headerLogo.png")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -79,11 +65,11 @@ const Home = () => {
           alignItems: "left",
           display: "flex",
           position: "absolute",
-          top: 20,
-          left: 20,
+          // top: 20,
+          left: 10,
           zIndex: 1,
         }}
-      /> */}
+      />
       <Button
         sx={{
           color: "#fff",
