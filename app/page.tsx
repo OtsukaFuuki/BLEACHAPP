@@ -7,19 +7,6 @@ import { useRandomImage } from "@/hooks/useRandomImage";
 const Home = () => {
   const router = useRouter();
 
-  const backgroundImages = [
-    "/images/top/1.jpeg",
-    "/images/top/2.jpeg",
-    "/images/top/3.jpeg",
-    "/images/top/4.jpeg",
-    "/images/top/5.jpeg",
-    "/images/top/6.jpeg",
-    "/images/top/7.jpeg",
-  ];
-
-  // ランダムな画像を取得するカスタムフック
-  const randomImage = useRandomImage(backgroundImages);
-
   const handleStart = () => {
     router.push("/category");
   };
