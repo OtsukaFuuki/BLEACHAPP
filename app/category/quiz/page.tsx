@@ -5,9 +5,22 @@ import { AnswerHistory } from "./components/AnswerHistory";
 import { NavigationButtons } from "./components/NavigationButtons";
 import { QuestionCard } from "./components/QuestionCard";
 import { ResultOverlay } from "./components/ResultOverlay";
+import { useRandomImage } from "@/hooks/useRandomImage";
 
 const QuizPage = () => {
   const theme = useTheme();
+
+  // ランダム表示したい背景画像の配列
+  const backgroundImages = [
+    "/images/top/bg_9.jpeg",
+    "/images/top/bg_5.jpeg",
+    "/images/top/bg_18.jpeg",
+    "/images/top/bg_4.jpeg",
+    "/images/top/bg_21.jpeg",
+  ];
+
+  // カスタムフックでランダムな1枚を取得
+  const randomImage = useRandomImage(backgroundImages);
 
   const {
     questions,
@@ -35,13 +48,16 @@ const QuizPage = () => {
       <Container
         maxWidth="sm"
         sx={{
-          py: 1,
+          pt: 4,
+          pb: 1,
           px: 3,
           textAlign: "center",
           display: "flex",
           flexDirection: "column",
           minHeight: "100vh",
-          mt: 3,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundImage: randomImage ? `url(${randomImage})` : "none",
         }}
       >
         <Typography variant="h4">クイズ終了！</Typography>
@@ -51,8 +67,16 @@ const QuizPage = () => {
         <AnswerHistory answers={answers} />
         <Button
           variant="contained"
-          color="primary"
-          sx={{ backgroundColor: theme.palette.custom.gold, mt: 3 }}
+          sx={{
+            backgroundColor: theme.palette.custom.gold,
+
+            color: "#fff",
+            width: "180px",
+            display: "flex",
+            justifyContent: "center",
+            maxWidth: "100%",
+            margin: "40px auto 0",
+          }}
           onClick={handleRestart}
         >
           もう一度プレイする

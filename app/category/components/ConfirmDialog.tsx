@@ -44,7 +44,7 @@ export const ConfirmDialog = ({
           alignItems: "center",
         }}
       >
-        <Box sx={{ width: 120, alignSelf: "flex-start" }}>
+        <Box sx={{ width: 140, alignSelf: "flex-start" }}>
           <Typography sx={{ fontWeight: "bold", fontSize: 14 }}>
             問題数：{count} 問
           </Typography>
@@ -60,7 +60,7 @@ export const ConfirmDialog = ({
             backgroundPosition: "center",
             width: "250px",
             aspectRatio: "250 / 220",
-            top: "15px",
+            top: "14px",
             position: "relative",
           }}
         />

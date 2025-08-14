@@ -34,13 +34,18 @@ export const AnswerHistory: React.FC<Props> = ({ answers }) => {
             borderColor={isCorrect ? "success.light" : "error.light"}
             bgcolor="#ffffffd2"
           >
-            <Typography sx={{ fontSize: 14 }}>
+            <Typography sx={{ fontSize: 14, textAlign: "left" }}>
               {i + 1}. {ans.question}
             </Typography>
 
             <Box sx={{ display: "flex", alignItems: "center", mt: 1 }}>
               <Typography
-                sx={{ fontWeight: "bold", width: "100px", fontSize: 12 }}
+                sx={{
+                  fontWeight: "bold",
+                  width: "100px",
+                  fontSize: 12,
+                  textAlign: "left",
+                }}
               >
                 あなたの答え
               </Typography>
@@ -51,7 +56,12 @@ export const AnswerHistory: React.FC<Props> = ({ answers }) => {
 
             <Box sx={{ display: "flex", alignItems: "center" }}>
               <Typography
-                sx={{ fontWeight: "bold", width: "100px", fontSize: 12 }}
+                sx={{
+                  fontWeight: "bold",
+                  width: "100px",
+                  fontSize: 12,
+                  textAlign: "left",
+                }}
               >
                 正解
               </Typography>
