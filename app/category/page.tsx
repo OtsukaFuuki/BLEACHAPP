@@ -16,7 +16,8 @@ const difficultyLabelMap: Record<Difficulty, string> = {
   hard: "上級",
   bankai: "卍解",
 };
-export default function CategoryPage() {
+
+const CategoryPage = () => {
   const router = useRouter();
   const theme = useTheme();
   const [count, setCount] = useState<number>(5);
@@ -64,4 +65,5 @@ export default function CategoryPage() {
       <TopButton />
     </>
   );
-}
+};
+export default CategoryPage;
