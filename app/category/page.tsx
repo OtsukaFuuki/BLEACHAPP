@@ -8,13 +8,13 @@ import { ConfirmDialog } from "./components/ConfirmDialog";
 import DifficultySelector from "./components/DifficultySelector";
 import QuizCountSelect from "./components/QuizCountSelect";
 import { TopButton } from "./components/TopButton";
-
-type Difficulty = "easy" | "normal" | "hard";
+import { Difficulty } from "./types/Difficulty";
 
 const difficultyLabelMap: Record<Difficulty, string> = {
   easy: "初級",
   normal: "中級",
   hard: "上級",
+  bankai: "卍解",
 };
 export default function CategoryPage() {
   const router = useRouter();

@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { easyQuestions } from "@/data/easyQuestion";
 import { normalQuestions } from "@/data/normalQuestion";
 import { hardQuestions } from "@/data/hardQuestion";
+import { bankaiQuestions } from "@/data/bankaiQuestion";
 
 export type Question = {
   id: number;
@@ -61,11 +62,22 @@ export const useQuiz = () => {
   useEffect(() => {
     let sourceQuestions: Question[] = [];
 
-    if (level === "easy") sourceQuestions = easyQuestions;
-    else if (level === "normal") sourceQuestions = normalQuestions;
-    else if (level === "hard") sourceQuestions = hardQuestions;
-    else sourceQuestions = easyQuestions;
-
+    if (level === "easy") {
+      sourceQuestions = easyQuestions;
+    }
+    if (level === "normal") {
+      sourceQuestions = normalQuestions;
+    }
+    if (level === "hard") {
+      sourceQuestions = hardQuestions;
+    }
+    if (level === "bankai") {
+      sourceQuestions = bankaiQuestions;
+    }
+    if (sourceQuestions.length === 0) {
+      alert("指定された問題は存在しません。");
+      return;
+    }
     const shuffled = shuffleArray(sourceQuestions);
     setQuestions(shuffled.slice(0, count));
     setCurrent(0);
