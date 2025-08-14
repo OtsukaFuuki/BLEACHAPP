@@ -16,7 +16,6 @@ const difficultyLabelMap: Record<Difficulty, string> = {
   normal: "中級",
   hard: "上級",
 };
-
 export default function CategoryPage() {
   const router = useRouter();
   const theme = useTheme();
